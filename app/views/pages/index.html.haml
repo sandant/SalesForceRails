@@ -1,0 +1,25 @@
+- if @access_token.nil?
+  %h1 You have to connect with salesforce!
+  = link_to 'Connect here right now', :controller => 'authorizations',
+                                         :action => 'oauth'
+- else
+  #left_column
+    left
+  #right_column
+    .title_nf.dark_stripe
+      %h4.arrow-down.header-content News Feed
+    %br
+    - @news_feed['records'].each do |nf|
+      #news_feed
+        %b.title= nf['CreatedBy']['Name']
+        %br
+        #user_photo
+          = image_tag nf['FeedPost']['CreatedBy']['SmallPhotoUrl'], 'width' => '50', 'height' => '50'
+        #user_body
+          .body= nf['FeedPost']['Body']
+          %br
+          .date= nf['CreatedDate'].split('T')[0]
+          %br
+        %br
+        .clear
+  .clear
