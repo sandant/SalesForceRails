@@ -6,6 +6,7 @@ TestApp::Application.routes.draw do
 
   get "pages/index"
   get "pages/error"
+  match "pages/search" => 'pages#search'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

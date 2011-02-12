@@ -17,4 +17,10 @@ class PagesController < ApplicationController
     @subtitle = 'hdshdsa'
   end
 
+  def search
+    unless params['s'].nil?
+      @found_values = SFRequest::search params['s']
+    end
+  end
+
 end

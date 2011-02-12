@@ -34,10 +34,4 @@ class AuthorizationsController < ApplicationController
     end
   end
 
-  def show_accounts
-    response = JSON.parse(Token::get_token.get("https://na8.salesforce.com/services/data/v20.0/query/?q=#{CGI::escape('SELECT Name, Id from Account LIMIT 100')}"))
-
-    @response = response['records']
-  end
-
 end

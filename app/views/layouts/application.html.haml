@@ -13,10 +13,10 @@
           %li.active= link_to 'Sticky Note', :controller => 'pages', :action => 'index'
           %li= link_to 'Accounts', :controller => 'pages', :action => 'error'
           %li= link_to 'Contacts', :controller => 'pages', :action => 'error'
-        %form
+        = form_tag :controller => 'pages', :action => 'search' do
           #search
-            %input{:value => 'search...', :class => 'sbox', :type => 'text', :name => 's', :tabindex => '1'}
-            %input{:type => 'image', :alt => 'Search', :src => '/images/search-icon-small-white.png', :id => 'sbutton'}
+            = text_field_tag 's', 'search...', :class => 'sbox', :tabindex => '1'
+            = image_submit_tag '/images/search-icon-small-white.png', :tabindex => '2', :id => 'sbutton', :alt => 'Search'
       #section_info
         #info_text
           %h1 Connecting with SalesForce using Ruby on Rails
