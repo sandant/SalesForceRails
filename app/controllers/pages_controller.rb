@@ -3,23 +3,26 @@ class PagesController < ApplicationController
   require 'SFRequest'
 
   def index
-    @title = 'Connecting SalesForce using Ruby on Rails'
-    @subtitle = 'You have to connect with SalesForce'
     @access_token = Token::get_token
     unless @access_token.nil?
-      @subtitle = 'You are connected with salesforce now'
       @news_feed = SFRequest::get_news_feed
     end
   end
 
   def error
-    @title = 'It ocurred an error'
-    @subtitle = 'hdshdsa'
   end
 
   def search
-    unless params['s'].nil?
-      @found_values = SFRequest::search params['s']
+    #it has to be longer than 2 letters
+    unless params['s'].nil? || params['s'].length < 2
+      unless Token::get_token.nil?
+        @found_values = SFRequest::search params['s']
+      else
+        redirect_to :action => 'index'      
+      end
+    else
+      flash[:message] = 'You need at least 2 letters'
+      redirect_to :action => 'index'
     end
   end
 

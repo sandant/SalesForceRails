@@ -1,0 +1,30 @@
+#sobject
+  - @sobject["records"].each do |s|
+    - form_tag :action => 'update' do
+      = hidden_field_tag 'Id', s["Id"]
+      %br
+      = label_tag 'Name'
+      = text_field_tag 'Name', s["Name"]
+      %br
+      = label_tag 'Website'
+      = text_field_tag 'Website', s["Website"]
+      %br
+      = label_tag 'Description'
+      = text_field_tag 'Description', s["Description"]
+      %br
+      = label_tag 'BillingStreet'
+      = text_field_tag 'BillingStreet', s["BillingStreet"]
+      %br
+      = label_tag 'BillingState'
+      = text_field_tag 'BillingState', s["BillingState"]
+      %br
+      = label_tag 'BillingPostalCode'
+      = text_field_tag 'BillingPostalCode', s["BillingPostalCode"]
+      %br
+      = label_tag 'BillingCountry'
+      = text_field_tag 'BillingCountry', s["BillingCountry"]
+      %br
+      = label_tag 'BillingCity'
+      = text_field_tag 'BillingCity', s["BillingCity"]
+      %br
+      = submit_tag 'Edit'

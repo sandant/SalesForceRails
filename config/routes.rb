@@ -1,5 +1,11 @@
 TestApp::Application.routes.draw do
 
+  get "sobjects/index"
+  get "sobjects/edit"
+  get "sobjects/delete"
+  get "sobjects/show"
+  get "sobjects/update"
+
   get "authorizations/oauth"
   get "authorizations/callback"
   get "authorizations/show_accounts"
@@ -7,6 +13,7 @@ TestApp::Application.routes.draw do
   get "pages/index"
   get "pages/error"
   match "pages/search" => 'pages#search'
+  get 'pages/edit_account'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

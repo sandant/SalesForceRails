@@ -1,7 +1,8 @@
+- unless flash[:message].blank?
+  %h4= flash[:message]
 - if @access_token.nil?
   %h1 You have to connect with salesforce!
-  = link_to 'Connect here right now', :controller => 'authorizations',
-                                         :action => 'oauth'
+  = link_to 'Connect here right now', :controller => 'authorizations', :action => 'oauth'
 - else
   #left_column
     left
