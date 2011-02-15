@@ -1,6 +1,7 @@
 module SFRequest
   require 'Token'
   require 'cgi'
+  require 'json'
 
   INSTANCE_URL = 'https://na8.salesforce.com/services/data/v21.0/'
 
@@ -15,7 +16,7 @@ module SFRequest
   end
 
   def SFRequest.get_sobject id, type
-    uri = "#{INSTANCE_URL}/services/data/v21.0/query/?q="
+    uri = "#{INSTANCE_URL}query/?q="
     case type
       when 'Account'
         uri += "SELECT Id, Name, Website, Description, BillingStreet, BillingState, BillingPostalCode, BillingCountry, BillingCity FROM Account WHERE Id = '#{id}' LIMIT 1"
@@ -24,13 +25,15 @@ module SFRequest
       when 'Lead'
         uri += "SELECT Id, Name FROM Lead WHERE Id = '#{id}' LIMIT 1"
     end
-
     response = JSON.parse(Token::get_token.get(uri))
     return response
   end
 
-  def SFRequest.update_account id
-    response = JSON.parse(Token::get_token.post("#{INSTANCE_URL}sobjects/Account/#{id}?_HttpMethod=PATCH", "{\"Name\":\"#{new_name}\",\"BillingCity\":\"#{city}\"}", {'Content-type' => 'application/json'})
+  def SFRequest.update_sobject sobject
+    params_json = "{\"Name\":\"#{sobject["Name"]}\",\"Website\":\"#{sobject["Website"]}\",\"Description\":\"#{sobject["Description"]}\",
+                    \"BillingStreet\":\"#{sobject["BillingStreet"]}\",\"BillingState\":\"#{sobject["BillingState"]}\",\"BillingPostalCode\":\"#{sobject["BillingPostalCode"]}\",
+                    \"BillingCountry\":\"#{sobject["BillingCountry"]}\",\"BillingCity\":\"#{sobject["BillingCity"]}\"}"
+    response = Token::get_token.post("#{INSTANCE_URL}sobjects/Account/#{sobject["Id"]}?_HttpMethod=PATCH", params_json, {'Content-type' => 'application/json'})
   end
 
 end

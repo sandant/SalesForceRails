@@ -10,9 +10,15 @@ class SobjectsController < ApplicationController
     end
   end
 
-  def update 
-    flash[:message] = 'Updated account'
-    redirect_to :controller => 'pages', :action => 'index'
+  def update
+    unless params.nil?
+      SFRequest::update_sobject params
+      flash[:message] = 'Updated account'
+      redirect_to :action => 'edit', :id => params['Id'], :type => params['Type']
+    else
+      flash[:message] = 'You need at least one object for make an update'
+      redirect_to :controller => 'pages', :action => 'index'
+    end
   end
 
   def delete

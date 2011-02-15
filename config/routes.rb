@@ -4,7 +4,7 @@ TestApp::Application.routes.draw do
   get "sobjects/edit"
   get "sobjects/delete"
   get "sobjects/show"
-  get "sobjects/update"
+  match "sobjects/update" => "sobjects#update"
 
   get "authorizations/oauth"
   get "authorizations/callback"

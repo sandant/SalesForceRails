@@ -1,0 +1,1490 @@
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-14 20:48:41 -0200
+
+SyntaxError (/Users/SanDant/Desktop/SalesForceRails/lib/SFRequest.rb:34: syntax error, unexpected keyword_end, expecting ')'):
+  app/controllers/pages_controller.rb:3:in `<class:PagesController>'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-14 20:51:34 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-14 20:51:48 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 20ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwLTp5nVqQr6t2EUdpPLx2O4jsN4rp1xfccDHMf3Nor.nmQQKog%3D%3D" for 127.0.0.1 at 2011-02-14 20:52:08 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwLTp5nVqQr6t2EUdpPLx2O4jsN4rp1xfccDHMf3Nor.nmQQKog=="}
+Redirected to http://localhost:3000/pages/index
+Completed 302 Found in 1350ms
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2011-02-14 20:52:09 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 1112ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-14 20:52:33 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (35.6ms)
+Completed 200 OK in 1402ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72l3IAA&type=Account" for 127.0.0.1 at 2011-02-14 20:52:40 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l3IAA", "type"=>"Account"}
+Completed   in 998ms
+
+OAuth2::HTTPError (Received HTTP 404 during request.):
+  lib/OAuth.rb:36:in `request'
+  lib/OAuth.rb:7:in `request'
+  lib/SFRequest.rb:28:in `get_sobject'
+  app/controllers/sobjects_controller.rb:9:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-14 20:52:49 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 1018ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 20:52:53 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+Completed   in 907ms
+
+OAuth2::HTTPError (Received HTTP 404 during request.):
+  lib/OAuth.rb:36:in `request'
+  lib/OAuth.rb:7:in `request'
+  lib/SFRequest.rb:28:in `get_sobject'
+  app/controllers/sobjects_controller.rb:9:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (27.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.8ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 20:53:34 -0200
+
+SyntaxError (/Users/SanDant/Desktop/SalesForceRails/app/controllers/sobjects_controller.rb:35: syntax error, unexpected keyword_end, expecting $end):
+  
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.8ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 20:53:43 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+Completed   in 1050ms
+
+OAuth2::HTTPError (Received HTTP 404 during request.):
+  lib/OAuth.rb:36:in `request'
+  lib/OAuth.rb:7:in `request'
+  lib/SFRequest.rb:28:in `get_sobject'
+  app/controllers/sobjects_controller.rb:9:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 20:54:47 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+Completed   in 1216ms
+
+OAuth2::HTTPError (Received HTTP 404 during request.):
+  lib/OAuth.rb:36:in `request'
+  lib/OAuth.rb:7:in `request'
+  lib/SFRequest.rb:28:in `get_sobject'
+  app/controllers/sobjects_controller.rb:9:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 20:55:35 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+Completed   in 1042ms
+
+OAuth2::HTTPError (Received HTTP 404 during request.):
+  lib/OAuth.rb:36:in `request'
+  lib/OAuth.rb:7:in `request'
+  lib/SFRequest.rb:28:in `get_sobject'
+  app/controllers/sobjects_controller.rb:9:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (26.8ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.8ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 20:55:39 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+Completed   in 998ms
+
+OAuth2::HTTPError (Received HTTP 404 during request.):
+  lib/OAuth.rb:36:in `request'
+  lib/OAuth.rb:7:in `request'
+  lib/SFRequest.rb:28:in `get_sobject'
+  app/controllers/sobjects_controller.rb:9:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 20:55:58 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+Completed   in 1003ms
+
+OAuth2::HTTPError (Received HTTP 404 during request.):
+  lib/OAuth.rb:36:in `request'
+  lib/OAuth.rb:7:in `request'
+  lib/SFRequest.rb:28:in `get_sobject'
+  app/controllers/sobjects_controller.rb:9:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-14 20:56:18 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-14 20:56:21 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 6ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwGxddFELy9NFV6_.XCCaC_4duXn8S5n80kt3.8w9aej9kXAxEQ%3D%3D" for 127.0.0.1 at 2011-02-14 20:56:24 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwGxddFELy9NFV6_.XCCaC_4duXn8S5n80kt3.8w9aej9kXAxEQ=="}
+Redirected to http://localhost:3000/pages/index
+Completed 302 Found in 1466ms
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2011-02-14 20:56:25 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 1159ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2011-02-14 20:59:07 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 1227ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-14 20:59:17 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 1110ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 20:59:21 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml___368345489854015198_2172656940__679325020207033735 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 1045ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:00:43 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+Completed   in 1007ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/controllers/sobjects_controller.rb:10:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (26.7ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.3ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:01:01 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+Completed   in 1044ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/controllers/sobjects_controller.rb:10:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:01:18 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+Completed   in 1008ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/controllers/sobjects_controller.rb:10:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:01:25 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+Completed   in 1083ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/controllers/sobjects_controller.rb:10:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.2ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:01:55 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (3.9ms)
+Completed   in 1060ms
+
+ActionView::Template::Error (undefined method `each' for #<SObjects::Account:0x00000104b41158>):
+    1: #sobject
+    2:   - @sobject.each do |s|
+    3:     - form_tag :action => 'update' do
+    4:       = hidden_field_tag 'Id', s.Id
+    5:       %br
+  app/views/sobjects/edit.html.haml:2:in `_app_views_sobjects_edit_html_haml___368345489854015198_2186902320__679325020207033735'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:02:49 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_sobjects_edit_html_haml___368345489854015198_2172699160__679325020207033735 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:2)
+Rendered sobjects/edit.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 1075ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:02:56 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _app_views_sobjects_edit_html_haml___368345489854015198_2187112780__679325020207033735 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:2)
+Rendered sobjects/edit.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 1038ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:05:34 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml___368345489854015198_2164659800__679325020207033735 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 1531ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:17:55 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml___368345489854015198_2186709720__679325020207033735 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 2819ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:18:10 -0200
+
+ActionController::RoutingError (No route matches "/sobjects/update"):
+  
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:18:55 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml___368345489854015198_2187226680__679325020207033735 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 1067ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:18:58 -0200
+
+ActionController::RoutingError (No route matches "/sobjects/update"):
+  
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:19:17 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml___368345489854015198_2164482280__679325020207033735 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1108ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:19:20 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml___368345489854015198_2175379420__679325020207033735 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1102ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:19:25 -0200
+
+ActionController::RoutingError (No route matches "/sobjects/update"):
+  
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:22:01 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml___368345489854015198_2175235620__679325020207033735 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 1253ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:22:03 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml___368345489854015198_2175551600__679325020207033735 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 1045ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:22:09 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kzIAA", "Name"=>"United Oil & Gas, UK", "Website"=>"http://www.uos.com", "Description"=>"", "BillingStreet"=>"Kings Park, 17th Avenue, Team Valley Trading Estate,           Gateshead, Tyne and Wear NE26 3HS           United Kingdom", "BillingState"=>"UK", "BillingPostalCode"=>"", "BillingCountry"=>"", "BillingCity"=>"Montevideo", "commit"=>"Edit"}
+Completed   in 0ms
+
+NoMethodError (undefined method `Name' for #<ActiveSupport::HashWithIndifferentAccess:0x00000103552a40>):
+  lib/SFRequest.rb:34:in `update_account'
+  app/controllers/sobjects_controller.rb:15:in `update'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:24:27 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml___368345489854015198_2164869660__679325020207033735 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 2024ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:24:31 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kzIAA", "Name"=>"United Oil & Gas, UK", "Website"=>"http://www.uos.com", "Description"=>"", "BillingStreet"=>"Kings Park, 17th Avenue, Team Valley Trading Estate,           Gateshead, Tyne and Wear NE26 3HS           United Kingdom", "BillingState"=>"UK", "BillingPostalCode"=>"", "BillingCountry"=>"", "BillingCity"=>"Montevideo", "commit"=>"Edit"}
+Completed   in 0ms
+
+ArgumentError (wrong number of arguments (3 for 1)):
+  lib/SFRequest.rb:33:in `update_account'
+  app/controllers/sobjects_controller.rb:15:in `update'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-14 21:25:14 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-14 21:25:16 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 6ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwPgjgPzkasFkDOEa7FQRWbErqvZMIEy3VEQbZL3lkDxOytVusw%3D%3D" for 127.0.0.1 at 2011-02-14 21:25:19 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwPgjgPzkasFkDOEa7FQRWbErqvZMIEy3VEQbZL3lkDxOytVusw=="}
+Redirected to http://localhost:3000/pages/index
+Completed 302 Found in 1307ms
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2011-02-14 21:25:20 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 1077ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-14 21:25:28 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 1110ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:25:31 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__1591113352955178445_2168999180__3100237848338702517 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 1021ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:25:37 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kzIAA", "Name"=>"United Oil & Gas, UK", "Website"=>"http://www.uos.com", "Description"=>"", "BillingStreet"=>"Kings Park, 17th Avenue, Team Valley Trading Estate,           Gateshead, Tyne and Wear NE26 3HS           United Kingdom", "BillingState"=>"UK", "BillingPostalCode"=>"", "BillingCountry"=>"", "BillingCity"=>"Montevideo", "commit"=>"Edit"}
+Completed   in 1348ms
+
+JSON::ParserError (A JSON text must at least contain two octets!):
+  lib/SFRequest.rb:34:in `update_account'
+  app/controllers/sobjects_controller.rb:15:in `update'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:30:13 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__1591113352955178445_2190017480__3100237848338702517 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 1342ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:30:15 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__1591113352955178445_2190210260__3100237848338702517 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 1041ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:30:22 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kzIAA", "Name"=>"United Oil & Gas, UK2", "Website"=>"http://www.uos.com", "Description"=>"", "BillingStreet"=>"Kings Park, 17th Avenue, Team Valley Trading Estate,           Gateshead, Tyne and Wear NE26 3HS           United Kingdom", "BillingState"=>"UK", "BillingPostalCode"=>"", "BillingCountry"=>"", "BillingCity"=>"Montevideo", "commit"=>"Edit"}
+Completed   in 1480ms
+
+JSON::ParserError (A JSON text must at least contain two octets!):
+  lib/SFRequest.rb:34:in `update_account'
+  app/controllers/sobjects_controller.rb:15:in `update'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-14 21:31:28 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-14 21:31:29 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 6ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwIJrnfcDuUTjhQ2uArQAxKFH.3seiB68.II2u0ErsgiLXUvBlQ%3D%3D" for 127.0.0.1 at 2011-02-14 21:31:32 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwIJrnfcDuUTjhQ2uArQAxKFH.3seiB68.II2u0ErsgiLXUvBlQ=="}
+Redirected to http://localhost:3000/pages/index
+Completed 302 Found in 1359ms
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2011-02-14 21:31:33 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 1135ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-14 21:31:46 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 1206ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:31:51 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml___1482610170893015748_2154209360__2782227296443949309 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 1091ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:32:01 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kyIAA", "Name"=>"Santiago Doldan Account", "Website"=>"www.genepoint.com", "Description"=>"Genomics company engaged in mapping and sequencing of the human genome and developing gene-based drugs", "BillingStreet"=>"345 Shoreline Park           Mountain View, CA 94043           USA", "BillingState"=>"CA", "BillingPostalCode"=>"", "BillingCountry"=>"", "BillingCity"=>"Mountain View", "commit"=>"Edit"}
+Redirected to http://localhost:3000/pages/index
+Completed 302 Found in 1423ms
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2011-02-14 21:32:02 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 1130ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-14 21:32:12 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 1124ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:32:20 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml___1482610170893015748_2155096120__2782227296443949309 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:3)
+Rendered sobjects/edit.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 1093ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:32:27 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kyIAA", "Name"=>"Santiago Doldan Account", "Website"=>"www.genepoint.com", "Description"=>"Genomics company engaged in mapping and sequencing of the human genome and developing gene-based drugs", "BillingStreet"=>"345 Shoreline Park           Mountain View, CA 94043           USA", "BillingState"=>"CA", "BillingPostalCode"=>"", "BillingCountry"=>"", "BillingCity"=>"Prado city", "commit"=>"Edit"}
+Redirected to http://localhost:3000/pages/index
+Completed 302 Found in 1355ms
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2011-02-14 21:32:29 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 1079ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-14 21:37:02 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 1643ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:37:07 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (0.6ms)
+Completed   in 1028ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: #sobject
+    2:   unless flash[:message].blank?
+    3:     = flash[:message]
+    4:   - @sobject["records"].each do |s|
+    5:     - form_tag :action => 'update' do
+    6:       = hidden_field_tag 'Id', s["Id"]
+  app/views/sobjects/edit.html.haml:3
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:37:22 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml___1482610170893015748_2154747540__2782227296443949309 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 1055ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:37:36 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kyIAA", "Name"=>"SDacc", "Website"=>"www.genepoint.com", "Description"=>"Genomics company engaged in mapping and sequencing of the human genome and developing gene-based drugs", "BillingStreet"=>"345 Shoreline Park           Mountain View, CA 94043           USA", "BillingState"=>"CA", "BillingPostalCode"=>"", "BillingCountry"=>"", "BillingCity"=>"Prado city", "type"=>"", "commit"=>"Edit"}
+Completed   in 0ms
+
+NoMethodError (undefined method `update_sobject' for SFRequest:Module):
+  app/controllers/sobjects_controller.rb:15:in `update'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-14 21:38:18 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-14 21:38:20 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 6ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwG6GrJqtEB3SJma.pCJsT7sgXrr4Njjo_qaPGvEGgtRr.FUdEQ%3D%3D" for 127.0.0.1 at 2011-02-14 21:38:24 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwG6GrJqtEB3SJma.pCJsT7sgXrr4Njjo_qaPGvEGgtRr.FUdEQ=="}
+Redirected to http://localhost:3000/pages/index
+Completed 302 Found in 1356ms
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2011-02-14 21:38:25 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 1146ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-14 21:38:31 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1113ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:38:38 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2166114100_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 2123ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:38:51 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kyIAA", "Name"=>"SDacc", "Website"=>"www.genepoint.com", "Description"=>"Genomics company engaged in mapping and sequencing of the human genome and developing gene-based drugs", "BillingStreet"=>"345 Shoreline Park           Mountain View, CA 94043           USA", "BillingState"=>"CA", "BillingPostalCode"=>"", "BillingCountry"=>"Uruguay", "BillingCity"=>"Prado city", "type"=>"", "commit"=>"Edit"}
+Redirected to http://localhost:3000/sobjects/edit?type=
+Completed 302 Found in 1436ms
+
+
+Started GET "/sobjects/edit?type=" for 127.0.0.1 at 2011-02-14 21:38:53 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"type"=>""}
+Redirected to http://localhost:3000/pages/index
+Completed 302 Found in 0ms
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2011-02-14 21:38:53 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 1101ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-14 21:39:07 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1128ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:39:10 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2190002960_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 1085ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:41:05 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kyIAA", "Name"=>"SDacc", "Website"=>"www.genepoint.com", "Description"=>"Genomics company engaged in mapping and sequencing of the human genome and developing gene-based drugs", "BillingStreet"=>"345 Shoreline Park           Mountain View, CA 94043           USA", "BillingState"=>"CA", "BillingPostalCode"=>"", "BillingCountry"=>"Uruguay", "BillingCity"=>"Prado city", "type"=>"", "commit"=>"Edit"}
+Redirected to http://localhost:3000/sobjects/edit?type=
+Completed 302 Found in 1430ms
+
+
+Started GET "/sobjects/edit?type=" for 127.0.0.1 at 2011-02-14 21:41:06 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"type"=>""}
+Redirected to http://localhost:3000/pages/error
+Completed 302 Found in 0ms
+
+
+Started GET "/pages/error" for 127.0.0.1 at 2011-02-14 21:41:06 -0200
+  Processing by PagesController#error as HTML
+Rendered pages/error.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:41:39 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2180120280_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1419ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:41:42 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kyIAA", "Name"=>"SDacc", "Website"=>"www.genepoint.com", "Description"=>"Genomics company engaged in mapping and sequencing of the human genome and developing gene-based drugs", "BillingStreet"=>"345 Shoreline Park           Mountain View, CA 94043           USA", "BillingState"=>"CA", "BillingPostalCode"=>"", "BillingCountry"=>"Uruguay", "BillingCity"=>"Prado city", "type"=>"", "commit"=>"Edit"}
+Redirected to http://localhost:3000/sobjects/edit?id=001C000000o72kyIAA&type=
+Completed 302 Found in 1373ms
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=" for 127.0.0.1 at 2011-02-14 21:41:43 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>""}
+Completed   in 1005ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/OAuth.rb:36:in `request'
+  lib/OAuth.rb:7:in `request'
+  lib/SFRequest.rb:28:in `get_sobject'
+  app/controllers/sobjects_controller.rb:7:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:42:10 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2166644220_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 1133ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:42:12 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kyIAA", "Name"=>"SDacc", "Website"=>"www.genepoint.com", "Description"=>"Genomics company engaged in mapping and sequencing of the human genome and developing gene-based drugs", "BillingStreet"=>"345 Shoreline Park           Mountain View, CA 94043           USA", "BillingState"=>"CA", "BillingPostalCode"=>"", "BillingCountry"=>"Uruguay", "BillingCity"=>"Prado city", "type"=>"", "commit"=>"Edit"}
+Redirected to http://localhost:3000/sobjects/edit?id=001C000000o72kyIAA&type=
+Completed 302 Found in 1341ms
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=" for 127.0.0.1 at 2011-02-14 21:42:14 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>""}
+Completed   in 1006ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/OAuth.rb:36:in `request'
+  lib/OAuth.rb:7:in `request'
+  lib/SFRequest.rb:28:in `get_sobject'
+  app/controllers/sobjects_controller.rb:7:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:42:30 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 1041ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:45:55 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (4.5ms)
+Completed   in 1499ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    2:   - unless flash[:message].blank?
+    3:     = flash[:message]
+    4:   - form_tag :action => 'update' do
+    5:     = hidden_field_tag 'Id', @sobject["records"]["Id"]
+    6:     %br
+    7:     = label_tag 'Name'
+    8:     = text_field_tag 'Name', @sobject["records"]["Name"]
+  app/views/sobjects/edit.html.haml:5:in `[]'
+  app/views/sobjects/edit.html.haml:5:in `block in _app_views_sobjects_edit_html_haml__824996179116991520_2190016540_4574599754297441177'
+  app/views/sobjects/edit.html.haml:4:in `_app_views_sobjects_edit_html_haml__824996179116991520_2190016540_4574599754297441177'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:46:15 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (4.5ms)
+Completed   in 1032ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    2:   - unless flash[:message].blank?
+    3:     = flash[:message]
+    4:   - form_tag :action => 'update' do
+    5:     = hidden_field_tag 'Id', @sobject["records"]["Id"].to_s
+    6:     %br
+    7:     = label_tag 'Name'
+    8:     = text_field_tag 'Name', @sobject["records"]["Name"]
+  app/views/sobjects/edit.html.haml:5:in `[]'
+  app/views/sobjects/edit.html.haml:5:in `block in _app_views_sobjects_edit_html_haml__824996179116991520_2179144640_4574599754297441177'
+  app/views/sobjects/edit.html.haml:4:in `_app_views_sobjects_edit_html_haml__824996179116991520_2179144640_4574599754297441177'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:46:39 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (4.8ms)
+Completed   in 1051ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    5:     = hidden_field_tag 'Id', 'adsads'
+    6:     %br
+    7:     = label_tag 'Name'
+    8:     = text_field_tag 'Name', @sobject["records"]["Name"]
+    9:     %br
+    10:     = label_tag 'Website'
+    11:     = text_field_tag 'Website', @sobject["records"]["Website"]
+  app/views/sobjects/edit.html.haml:8:in `[]'
+  app/views/sobjects/edit.html.haml:8:in `block in _app_views_sobjects_edit_html_haml__824996179116991520_2166529180_4574599754297441177'
+  app/views/sobjects/edit.html.haml:4:in `_app_views_sobjects_edit_html_haml__824996179116991520_2166529180_4574599754297441177'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (27.2ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.4ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:46:57 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (4.5ms)
+Completed   in 1038ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    2:   - unless flash[:message].blank?
+    3:     = flash[:message]
+    4:   - form_tag :action => 'update' do
+    5:     = hidden_field_tag 'Id', @sobject["records"]["Id"]
+    6:     %br
+    7:     = label_tag 'Name'
+    8:     = text_field_tag 'Name', @sobject["records"]["Name"]
+  app/views/sobjects/edit.html.haml:5:in `[]'
+  app/views/sobjects/edit.html.haml:5:in `block in _app_views_sobjects_edit_html_haml__824996179116991520_2180065320_4574599754297441177'
+  app/views/sobjects/edit.html.haml:4:in `_app_views_sobjects_edit_html_haml__824996179116991520_2180065320_4574599754297441177'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:47:47 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+ERROR: compiling _app_views_sobjects_edit_html_haml__824996179116991520_2178776540_4574599754297441177 RAISED /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:35: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _app_views_sobjects_edit_html_haml__824996179116991520_2178776540_4574599754297441177(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "sobjects/edit";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<div id='sobject'>\n", 1, false);
+ unless flash[:message].blank?;
+_hamlout.push_text("  #{_hamlout.format_script_false_false_false_true_false_true_false(( flash[:message]
+));}\n", 0, false);end; s = @sobject["records"];
+_hamlout.append_if_string=  form_tag :action => 'update' do;
+_hamlout.push_text("  #{_hamlout.format_script_false_false_false_true_false_true_false(( hidden_field_tag 'Id', s["Id"]
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( label_tag 'Name'
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( text_field_tag 'Name', s["Name"]
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( label_tag 'Website'
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( text_field_tag 'Website', s["Website"]
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( label_tag 'Description'
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( text_field_tag 'Description', s["Description"]
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( label_tag 'BillingStreet'
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( text_field_tag 'BillingStreet', s["BillingStreet"]
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( label_tag 'BillingState'
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( text_field_tag 'BillingState', s["BillingState"]
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( label_tag 'BillingPostalCode'
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( text_field_tag 'BillingPostalCode', s["BillingPostalCode"]
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( label_tag 'BillingCountry'
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( text_field_tag 'BillingCountry', s["BillingCountry"]
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( label_tag 'BillingCity'
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( text_field_tag 'BillingCity', s["BillingCity"]
+));}\n  <br>\n  #{
+_hamlout.format_script_false_false_false_true_false_true_false(( hidden_field_tag 'type', @sobject["type"]
+));}\n  #{_hamlout.format_script_false_false_false_true_false_true_false(( submit_tag 'Edit', :action => :update
+));}\n", 0, false);end;end;_hamlout.push_text("</div>\n", -1, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_view/template.rb:255:in `module_eval'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_view/template.rb:255:in `compile'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `block in render'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/haml-3.0.25/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/SanDant/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:435:in `_run__2235066963004951049__process_action__2104679509775826299__callbacks'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `block in action'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.0.alpha.221/lib/sass/plugin/rack.rb:54:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/Users/SanDant/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/SanDant/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/SanDant/.rvm/rubies/ruby-1.9.2-head/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered sobjects/edit.html.haml within layouts/application (4.2ms)
+Completed   in 1093ms
+
+ActionView::Template::Error (/Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:35: syntax error, unexpected keyword_ensure, expecting $end):
+    32:       = hidden_field_tag 'type', @sobject["type"]
+    33:       = submit_tag 'Edit', :action => :update
+  
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:48:05 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (4.6ms)
+Completed   in 1176ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    3:     = flash[:message]
+    4:   - s = @sobject["records"]
+    5:   - form_tag :action => 'update' do
+    6:     = hidden_field_tag 'Id', s["Id"]
+    7:     %br
+    8:     = label_tag 'Name'
+    9:     = text_field_tag 'Name', s["Name"]
+  app/views/sobjects/edit.html.haml:6:in `[]'
+  app/views/sobjects/edit.html.haml:6:in `block in _app_views_sobjects_edit_html_haml__824996179116991520_2179636420_4574599754297441177'
+  app/views/sobjects/edit.html.haml:5:in `_app_views_sobjects_edit_html_haml__824996179116991520_2179636420_4574599754297441177'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:48:21 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (4.6ms)
+Completed   in 1082ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    6:     = hidden_field_tag 'Id', "dsdsds"
+    7:     %br
+    8:     = label_tag 'Name'
+    9:     = text_field_tag 'Name', s["Name"]
+    10:     %br
+    11:     = label_tag 'Website'
+    12:     = text_field_tag 'Website', s["Website"]
+  app/views/sobjects/edit.html.haml:9:in `[]'
+  app/views/sobjects/edit.html.haml:9:in `block in _app_views_sobjects_edit_html_haml__824996179116991520_2179208880_4574599754297441177'
+  app/views/sobjects/edit.html.haml:5:in `_app_views_sobjects_edit_html_haml__824996179116991520_2179208880_4574599754297441177'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:48:53 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (4.7ms)
+Completed   in 1121ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    3:     = flash[:message]
+    4:   - s = @sobject["records"]
+    5:   - form_tag :action => 'update' do
+    6:     = hidden_field_tag 'Id', s["Id"].to_i
+    7:     %br
+    8:     = label_tag 'Name'
+    9:     = text_field_tag 'Name', s["Name"]
+  app/views/sobjects/edit.html.haml:6:in `[]'
+  app/views/sobjects/edit.html.haml:6:in `block in _app_views_sobjects_edit_html_haml__824996179116991520_2166650840_4574599754297441177'
+  app/views/sobjects/edit.html.haml:5:in `_app_views_sobjects_edit_html_haml__824996179116991520_2166650840_4574599754297441177'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.8ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:49:24 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2189483700_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1114ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:49:28 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kyIAA", "Name"=>"SDacc", "Website"=>"www.genepoint.com", "Description"=>"Genomics company engaged in mapping and sequencing of the human genome and developing gene-based drugs", "BillingStreet"=>"345 Shoreline Park           Mountain View, CA 94043           USA", "BillingState"=>"CA", "BillingPostalCode"=>"", "BillingCountry"=>"Uruguay", "BillingCity"=>"Prado city", "type"=>"", "commit"=>"Edit"}
+Redirected to http://localhost:3000/sobjects/edit?id=001C000000o72kyIAA&type=
+Completed 302 Found in 1435ms
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=" for 127.0.0.1 at 2011-02-14 21:49:30 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>""}
+Completed   in 1013ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/OAuth.rb:36:in `request'
+  lib/OAuth.rb:7:in `request'
+  lib/SFRequest.rb:28:in `get_sobject'
+  app/controllers/sobjects_controller.rb:7:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:49:37 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2180101780_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1068ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:49:39 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2178875380_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1113ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:50:12 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2189929120_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 1183ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:50:35 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2178650220_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 1103ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:51:02 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2179981260_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1045ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:51:16 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (5.5ms)
+Completed   in 1028ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+    29:       = label_tag 'BillingCity'
+    30:       = text_field_tag 'BillingCity', s["BillingCity"]
+    31:       %br
+    32:       = hidden_field_tag 'type', @sobject[0]["Type"]
+    33:       = submit_tag 'Edit', :action => :update
+  app/views/sobjects/edit.html.haml:32:in `block (2 levels) in _app_views_sobjects_edit_html_haml__824996179116991520_2166934460_4574599754297441177'
+  app/views/sobjects/edit.html.haml:5:in `block in _app_views_sobjects_edit_html_haml__824996179116991520_2166934460_4574599754297441177'
+  app/views/sobjects/edit.html.haml:4:in `each'
+  app/views/sobjects/edit.html.haml:4:in `_app_views_sobjects_edit_html_haml__824996179116991520_2166934460_4574599754297441177'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:51:31 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2180068240_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:6)
+Rendered sobjects/edit.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 1028ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:51:38 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2167150000_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:6)
+Rendered sobjects/edit.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 1023ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:51:57 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2179711560_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:6)
+Rendered sobjects/edit.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 1080ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:52:07 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (4.5ms)
+Completed   in 1081ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    1: #sobject
+    2:   = @sobject["records"]["type"]
+    3:   - unless flash[:message].blank?
+    4:     = flash[:message]
+    5:   - @sobject["records"].each do |s|
+  app/views/sobjects/edit.html.haml:2:in `[]'
+  app/views/sobjects/edit.html.haml:2:in `_app_views_sobjects_edit_html_haml__824996179116991520_2166580060_4574599754297441177'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.4ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:52:19 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (4.3ms)
+Completed   in 1592ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    1: #sobject
+    2:   = @sobject["records"]["type"].to_s
+    3:   - unless flash[:message].blank?
+    4:     = flash[:message]
+    5:   - @sobject["records"].each do |s|
+  app/views/sobjects/edit.html.haml:2:in `[]'
+  app/views/sobjects/edit.html.haml:2:in `_app_views_sobjects_edit_html_haml__824996179116991520_2179943240_4574599754297441177'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.4ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:52:25 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (4.5ms)
+Completed   in 1141ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    1: #sobject
+    2:   = @sobject["records"]["type"].to_i
+    3:   - unless flash[:message].blank?
+    4:     = flash[:message]
+    5:   - @sobject["records"].each do |s|
+  app/views/sobjects/edit.html.haml:2:in `[]'
+  app/views/sobjects/edit.html.haml:2:in `_app_views_sobjects_edit_html_haml__824996179116991520_2178651880_4574599754297441177'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.4ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:52:52 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2189977880_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1088ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:53:28 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2178692560_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 1105ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:54:03 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2180027400_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:6)
+Rendered sobjects/edit.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 1101ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:54:15 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+Rendered sobjects/edit.html.haml within layouts/application (4.5ms)
+Completed   in 1081ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    1: #sobject
+    2:   = @sobject["records"]["attributes"]
+    3:   - unless flash[:message].blank?
+    4:     = flash[:message]
+    5:   - @sobject["records"].each do |s|
+  app/views/sobjects/edit.html.haml:2:in `[]'
+  app/views/sobjects/edit.html.haml:2:in `_app_views_sobjects_edit_html_haml__824996179116991520_2167006020_4574599754297441177'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:54:32 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2180092480_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 1084ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:54:44 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kyIAA", "Type"=>"Account", "Name"=>"SDacc", "Website"=>"www.genepoint.com", "Description"=>"Genomics company engaged in mapping and sequencing of the human genome and developing gene-based drugs", "BillingStreet"=>"345 Shoreline Park           Mountain View, CA 94043           USA", "BillingState"=>"CA", "BillingPostalCode"=>"", "BillingCountry"=>"Uruguay", "BillingCity"=>"Prado city", "commit"=>"Edit"}
+Redirected to http://localhost:3000/sobjects/edit?id=001C000000o72kyIAA
+Completed 302 Found in 1441ms
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA" for 127.0.0.1 at 2011-02-14 21:54:45 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA"}
+Completed   in 1006ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/OAuth.rb:36:in `request'
+  lib/OAuth.rb:7:in `request'
+  lib/SFRequest.rb:28:in `get_sobject'
+  app/controllers/sobjects_controller.rb:7:in `edit'
+
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (26.8ms)
+Rendered /Users/SanDant/.rvm/gems/ruby-1.9.2-head/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.8ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:54:59 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2180051380_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1095ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:55:01 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2178801040_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 1100ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:55:03 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kyIAA", "Type"=>"Account", "Name"=>"SDacc", "Website"=>"www.genepoint.com", "Description"=>"Genomics company engaged in mapping and sequencing of the human genome and developing gene-based drugs", "BillingStreet"=>"345 Shoreline Park           Mountain View, CA 94043           USA", "BillingState"=>"CA", "BillingPostalCode"=>"", "BillingCountry"=>"Uruguay", "BillingCity"=>"Prado city", "commit"=>"Edit"}
+Redirected to http://localhost:3000/sobjects/edit?id=001C000000o72kyIAA&type=Account
+Completed 302 Found in 1407ms
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:55:05 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2179911760_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1096ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:55:15 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kyIAA", "Type"=>"Account", "Name"=>"SDacc", "Website"=>"www.genepoint.com", "Description"=>"Genomics company engaged in mapping and sequencing of the human genome and developing gene-based drugs", "BillingStreet"=>"345 Shoreline Park           Mountain View, CA 94043           USA", "BillingState"=>"CA", "BillingPostalCode"=>"", "BillingCountry"=>"Uruguay", "BillingCity"=>"Maldonado City", "commit"=>"Edit"}
+Redirected to http://localhost:3000/sobjects/edit?id=001C000000o72kyIAA&type=Account
+Completed 302 Found in 1443ms
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:55:16 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2190064160_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1095ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:55:27 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kyIAA", "Type"=>"Account", "Name"=>"SDacc", "Website"=>"www.sandant.com", "Description"=>"Genomics company engaged in mapping and sequencing of the human genome and developing gene-based drugs", "BillingStreet"=>"345 Shoreline Park           Mountain View, CA 94043           USA", "BillingState"=>"CA", "BillingPostalCode"=>"", "BillingCountry"=>"Uruguay", "BillingCity"=>"Maldonado City", "commit"=>"Edit"}
+Redirected to http://localhost:3000/sobjects/edit?id=001C000000o72kyIAA&type=Account
+Completed 302 Found in 1416ms
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:55:28 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2167254140_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 1064ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2011-02-14 21:55:31 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 1120ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-14 21:55:37 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 2372ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kyIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:55:42 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2166465240_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1113ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-14 21:56:00 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 1131ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:56:05 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2166958240_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 1080ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sobjects/update" for 127.0.0.1 at 2011-02-14 21:56:13 -0200
+  Processing by SobjectsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"89ayVaqGl2Pbb17T9mmAJ8Sy0KRUjJva5Nye6szpVes=", "Id"=>"001C000000o72kzIAA", "Type"=>"Account", "Name"=>"United Oil & Gas", "Website"=>"http://www.uos.com", "Description"=>"", "BillingStreet"=>"Kings Park, 17th Avenue, Team Valley Trading Estate,           Gateshead, Tyne and Wear NE26 3HS           United Kingdom", "BillingState"=>"UK", "BillingPostalCode"=>"", "BillingCountry"=>"", "BillingCity"=>"Montevideo", "commit"=>"Edit"}
+Redirected to http://localhost:3000/sobjects/edit?id=001C000000o72kzIAA&type=Account
+Completed 302 Found in 1567ms
+
+
+Started GET "/sobjects/edit?id=001C000000o72kzIAA&type=Account" for 127.0.0.1 at 2011-02-14 21:56:15 -0200
+  Processing by SobjectsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA", "type"=>"Account"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_sobjects_edit_html_haml__824996179116991520_2189953140_4574599754297441177 at /Users/SanDant/Desktop/SalesForceRails/app/views/sobjects/edit.html.haml:5)
+Rendered sobjects/edit.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 1092ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2011-02-14 21:56:21 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 1139ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/index" for 127.0.0.1 at 2011-02-14 21:59:13 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 1585ms (Views: 14.5ms | ActiveRecord: 0.0ms)

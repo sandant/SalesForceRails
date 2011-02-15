@@ -1,7 +1,10 @@
 #sobject
+  - unless flash[:message].blank?
+    = flash[:message]
   - @sobject["records"].each do |s|
     - form_tag :action => 'update' do
       = hidden_field_tag 'Id', s["Id"]
+      = hidden_field_tag 'Type', s["attributes"]["type"]
       %br
       = label_tag 'Name'
       = text_field_tag 'Name', s["Name"]
@@ -27,4 +30,4 @@
       = label_tag 'BillingCity'
       = text_field_tag 'BillingCity', s["BillingCity"]
       %br
-      = submit_tag 'Edit'
+      = submit_tag 'Edit', :action => :update
