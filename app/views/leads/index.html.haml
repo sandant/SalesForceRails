@@ -1,0 +1,5 @@
+.title_nf.dark_stripe
+  %h4.arrow-down.header-content Leads
+- @sobjects["records"].each do |s|
+  = link_to "#{s["FirstName"]} #{s["LastName"]}", edit_lead_url(s["Id"])
+  %br

@@ -4496,3 +4496,771 @@ Started POST "/pages/search" for 127.0.0.1 at 2011-02-15 23:14:20 -0200
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"fcbxKYAhzb/hfrx3szLHcokpSGzBkYLRxJS/FToOEZA=", "s"=>"pa", "x"=>"0", "y"=>"0"}
 Rendered pages/search.html.haml within layouts/application (112.5ms)
 Completed 200 OK in 2868ms (Views: 170.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72l3IAA/edit" for 127.0.0.1 at 2011-02-16 00:13:14 -0200
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l3IAA"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:13:16 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (30.4ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 00:13:25 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 96ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwBRk_QOuJJ94dGtmLeEv821KpanTJ3vbXow_OfYUXfAhswhu3Q%3D%3D" for 127.0.0.1 at 2011-02-16 00:13:31 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwBRk_QOuJJ94dGtmLeEv821KpanTJ3vbXow_OfYUXfAhswhu3Q=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1612ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:13:33 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (81.2ms)
+Completed 200 OK in 1104ms (Views: 102.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 00:13:40 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fcbxKYAhzb/hfrx3szLHcokpSGzBkYLRxJS/FToOEZA=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (70.3ms)
+Completed 200 OK in 1362ms (Views: 87.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/003C0000015JCKyIAO/edit" for 127.0.0.1 at 2011-02-16 00:13:56 -0200
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCKyIAO"}
+Rendered accounts/edit.html.haml within layouts/application (50.4ms)
+Completed 200 OK in 1042ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 00:14:39 -0200
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (61.5ms)
+Completed 200 OK in 1373ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 00:14:44 -0200
+  Processing by LeadsController#index as HTML
+Completed   in 1128ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:55:in `get_sobjects'
+  app/controllers/leads_controller.rb:10:in `index'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.6ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.9ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:16:34 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (32.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 00:16:39 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 37ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwK2uhvkgrusRNXleSNJ5uPKG0Kw1Gdy4bT2ef36IS3BQucuGvw%3D%3D" for 127.0.0.1 at 2011-02-16 00:16:42 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwK2uhvkgrusRNXleSNJ5uPKG0Kw1Gdy4bT2ef36IS3BQucuGvw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2485ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:16:45 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (92.7ms)
+Completed 200 OK in 1297ms (Views: 118.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 00:16:54 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fcbxKYAhzb/hfrx3szLHcokpSGzBkYLRxJS/FToOEZA=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (90.8ms)
+Completed 200 OK in 1500ms (Views: 119.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 00:17:46 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fcbxKYAhzb/hfrx3szLHcokpSGzBkYLRxJS/FToOEZA=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (130.6ms)
+Completed 200 OK in 1120ms (Views: 161.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyYHMAY/edit" for 127.0.0.1 at 2011-02-16 00:18:57 -0200
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyYHMAY"}
+Completed   in 1208ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:106:in `get_sobject'
+  app/controllers/leads_controller.rb:19:in `edit'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.5ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 00:19:03 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fcbxKYAhzb/hfrx3szLHcokpSGzBkYLRxJS/FToOEZA=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Completed   in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (25.1ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.3ms)
+
+
+Started GET "/pages/search" for 127.0.0.1 at 2011-02-16 00:19:08 -0200
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PagesController):
+  
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:19:15 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (55.6ms)
+Completed 200 OK in 1020ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 00:19:31 -0200
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (30.3ms)
+Completed 200 OK in 1130ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 00:19:43 -0200
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (93.9ms)
+Completed 200 OK in 1125ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/003C0000015JCL0IAO/edit" for 127.0.0.1 at 2011-02-16 00:19:48 -0200
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCL0IAO"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml__814269780_82679440_115384761 at /home/sandant/Desktop/testApp/app/views/contacts/edit.html.haml:2)
+Rendered contacts/edit.html.haml within layouts/application (61.7ms)
+Completed 200 OK in 1087ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts/003C0000015JCL0IAO" for 127.0.0.1 at 2011-02-16 00:19:58 -0200
+  Processing by ContactsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "Id"=>"003C0000015JCL0IAO", "FirstName"=>"Tim", "LastName"=>"Barr", "Phone"=>"(312) 596-1000", "Email"=>"barr_tim@grandhotels.com", "MailingStreet"=>"2335 N. Michigan Avenue, Suite 1500           Chicago, IL 60601, USA", "MailingCity"=>"", "MailingState"=>"Montevideo", "MailingCountry"=>"", "Description"=>"", "commit"=>"Edit", "id"=>"003C0000015JCL0IAO"}
+Completed   in 1715ms
+
+OAuth2::HTTPError (Received HTTP 404 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:151:in `update_sobject'
+  app/controllers/contacts_controller.rb:28:in `update'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.3ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (22.3ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.2ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 00:20:15 -0200
+  Processing by LeadsController#index as HTML
+Completed   in 1109ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:55:in `get_sobjects'
+  app/controllers/leads_controller.rb:10:in `index'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.6ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.3ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:21:12 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (57.9ms)
+Completed 200 OK in 2721ms (Views: 67.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 00:21:47 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (61.4ms)
+Completed 200 OK in 2045ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/003C0000015JCL7IAO/edit" for 127.0.0.1 at 2011-02-16 00:21:56 -0200
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCL7IAO"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml__814269780_81868130_115384761 at /home/sandant/Desktop/testApp/app/views/contacts/edit.html.haml:2)
+Rendered contacts/edit.html.haml within layouts/application (59.3ms)
+Completed 200 OK in 1023ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 00:22:17 -0200
+  Processing by LeadsController#index as HTML
+Completed   in 959ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:55:in `get_sobjects'
+  app/controllers/leads_controller.rb:10:in `index'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.6ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.5ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.1ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 00:24:06 -0200
+  Processing by LeadsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:24:07 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (29.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 00:24:18 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 29ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwMh2gHkDu9iB8LdRe16DcRviwd2yjgO4zJAbw3bxJNYLjy2lqA%3D%3D" for 127.0.0.1 at 2011-02-16 00:25:03 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwMh2gHkDu9iB8LdRe16DcRviwd2yjgO4zJAbw3bxJNYLjy2lqA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2209ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:25:06 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (69.1ms)
+Completed 200 OK in 2300ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 00:25:42 -0200
+  Processing by LeadsController#index as HTML
+Rendered leads/index.html.haml within layouts/application (74.3ms)
+Completed 200 OK in 1807ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyYJMAY/edit" for 127.0.0.1 at 2011-02-16 00:25:51 -0200
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyYJMAY"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml___1000739150_85023590__1042688963 at /home/sandant/Desktop/testApp/app/views/leads/edit.html.haml:2)
+Rendered leads/edit.html.haml within layouts/application (64.3ms)
+Completed 200 OK in 1659ms (Views: 79.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 00:29:31 -0200
+  Processing by LeadsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:29:33 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (31.7ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 00:30:05 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 65ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwDKxeL6sCHrUwervXfXVq8pmaqQfJsk.QbOAwS5l1LRgHOnVUw%3D%3D" for 127.0.0.1 at 2011-02-16 00:30:10 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwDKxeL6sCHrUwervXfXVq8pmaqQfJsk.QbOAwS5l1LRgHOnVUw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3046ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:30:13 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (38.9ms)
+Completed 200 OK in 3096ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 00:30:21 -0200
+  Processing by LeadsController#index as HTML
+Rendered leads/index.html.haml within layouts/application (141.4ms)
+Completed 200 OK in 2057ms (Views: 154.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyYSMAY/edit" for 127.0.0.1 at 2011-02-16 00:30:26 -0200
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyYSMAY"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml__823573029_83932400__370059620 at /home/sandant/Desktop/testApp/app/views/leads/edit.html.haml:2)
+Rendered leads/edit.html.haml within layouts/application (74.0ms)
+Completed 200 OK in 1777ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads/00QC000000lzyYSMAY" for 127.0.0.1 at 2011-02-16 00:30:37 -0200
+  Processing by LeadsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "Id"=>"00QC000000lzyYSMAY", "FirstName"=>"Betty", "LastName"=>"Bair", "Email"=>"bblair@abankingco.com", "Company"=>"American Banking Corp.", "Street"=>"", "State"=>"PA", "Country"=>"USA", "City"=>"", "Description"=>"Description", "commit"=>"Edit", "id"=>"00QC000000lzyYSMAY"}
+Completed   in 2085ms
+
+OAuth2::HTTPError (Received HTTP 404 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:152:in `update_sobject'
+  app/controllers/leads_controller.rb:28:in `update'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.8ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (69.2ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (94.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 00:31:49 -0200
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (55.7ms)
+Completed 200 OK in 3310ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/003C0000015JCKvIAO/edit" for 127.0.0.1 at 2011-02-16 00:31:56 -0200
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCKvIAO"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml__1046051483_82828470__370059620 at /home/sandant/Desktop/testApp/app/views/contacts/edit.html.haml:2)
+Rendered contacts/edit.html.haml within layouts/application (28.1ms)
+Completed 200 OK in 1448ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts/003C0000015JCKvIAO" for 127.0.0.1 at 2011-02-16 00:32:02 -0200
+  Processing by ContactsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "Id"=>"003C0000015JCKvIAO", "FirstName"=>"Rose", "LastName"=>"Gonzalez", "Phone"=>"(512) 757-6000", "Email"=>"rose@edge.com", "MailingStreet"=>"313 Constitution Place           Austin, TX 78767           USA", "MailingCity"=>"", "MailingState"=>"", "MailingCountry"=>"", "Description"=>"", "commit"=>"Edit", "id"=>"003C0000015JCKvIAO"}
+Completed   in 2853ms
+
+OAuth2::HTTPError (Received HTTP 404 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:152:in `update_sobject'
+  app/controllers/contacts_controller.rb:28:in `update'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.8ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.1ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:36:29 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (31.2ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 00:36:34 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 78ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwL0og2mZgnwUNYVajaBRm_bDPNk6l5esMTC.yqczC6JlsqlP4g%3D%3D" for 127.0.0.1 at 2011-02-16 00:36:40 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwL0og2mZgnwUNYVajaBRm_bDPNk6l5esMTC.yqczC6JlsqlP4g=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2960ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:36:43 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (27.3ms)
+Completed 200 OK in 2432ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 00:36:54 -0200
+  Processing by LeadsController#index as HTML
+Rendered leads/index.html.haml within layouts/application (33.4ms)
+Completed 200 OK in 1636ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyYIMAY/edit" for 127.0.0.1 at 2011-02-16 00:36:59 -0200
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyYIMAY"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml___58762524_84062420_75099253 at /home/sandant/Desktop/testApp/app/views/leads/edit.html.haml:2)
+Rendered leads/edit.html.haml within layouts/application (28.1ms)
+Completed 200 OK in 2122ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads/00QC000000lzyYIMAY" for 127.0.0.1 at 2011-02-16 00:37:04 -0200
+  Processing by LeadsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "Id"=>"00QC000000lzyYIMAY", "FirstName"=>"Norm", "LastName"=>"May", "Email"=>"norm_may@greenwich.net", "Company"=>"Greenwich Media", "Street"=>"", "State"=>"OH", "Country"=>"USA", "City"=>"", "Description"=>"", "commit"=>"Edit", "id"=>"00QC000000lzyYIMAY"}
+Completed   in 3451ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:152:in `update_sobject'
+  app/controllers/leads_controller.rb:28:in `update'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (64.5ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (90.4ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 00:37:20 -0200
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (56.8ms)
+Completed 200 OK in 2529ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/003C0000015JCKvIAO/edit" for 127.0.0.1 at 2011-02-16 00:37:26 -0200
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCKvIAO"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml__908442780_82551440_75099253 at /home/sandant/Desktop/testApp/app/views/contacts/edit.html.haml:2)
+Rendered contacts/edit.html.haml within layouts/application (77.0ms)
+Completed 200 OK in 2961ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts/003C0000015JCKvIAO" for 127.0.0.1 at 2011-02-16 00:37:31 -0200
+  Processing by ContactsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "Id"=>"003C0000015JCKvIAO", "FirstName"=>"Rose", "LastName"=>"Gonzalez", "Phone"=>"(512) 757-6000", "Email"=>"rose@edge.com", "MailingStreet"=>"313 Constitution Place           Austin, TX 78767           USA", "MailingCity"=>"", "MailingState"=>"", "MailingCountry"=>"", "Description"=>"", "commit"=>"Edit", "id"=>"003C0000015JCKvIAO"}
+Completed   in 1828ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:152:in `update_sobject'
+  app/controllers/contacts_controller.rb:28:in `update'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.4ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 00:37:38 -0200
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (51.4ms)
+Completed 200 OK in 3572ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72kyIAA/edit" for 127.0.0.1 at 2011-02-16 00:38:00 -0200
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml__380285104_85227060_75099253 at /home/sandant/Desktop/testApp/app/views/accounts/edit.html.haml:2)
+Rendered accounts/edit.html.haml within layouts/application (95.0ms)
+Completed 200 OK in 2850ms (Views: 143.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72kyIAA/edit" for 127.0.0.1 at 2011-02-16 00:39:44 -0200
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml__380285104_82812290_75099253 at /home/sandant/Desktop/testApp/app/views/accounts/edit.html.haml:2)
+Rendered accounts/edit.html.haml within layouts/application (61.4ms)
+Completed 200 OK in 3983ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/accounts/001C000000o72kyIAA" for 127.0.0.1 at 2011-02-16 00:39:57 -0200
+  Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "Id"=>"001C000000o72kyIAA", "Name"=>"TimbaSoftware", "Phone"=>"099187879", "Website"=>"www.sandant.com", "BillingStreet"=>"345 Shoreline Park", "BillingState"=>"CA", "BillingCountry"=>"Uruguay", "BillingCity"=>"Maldonado City", "Description"=>"Chatter Live description", "commit"=>"Edit", "id"=>"001C000000o72kyIAA"}
+Redirected to http://localhost:3000/accounts/001C000000o72kyIAA/edit
+Completed 302 Found in 3817ms
+
+
+Started GET "/accounts/001C000000o72kyIAA/edit" for 127.0.0.1 at 2011-02-16 00:40:01 -0200
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml__380285104_83849460_75099253 at /home/sandant/Desktop/testApp/app/views/accounts/edit.html.haml:2)
+Rendered accounts/edit.html.haml within layouts/application (65.3ms)
+Completed 200 OK in 2862ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 00:40:14 -0200
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered pages/search.html.haml within layouts/application (28.5ms)
+Completed 200 OK in 2344ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyYHMAY/edit" for 127.0.0.1 at 2011-02-16 00:40:19 -0200
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyYHMAY"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml___58762524_84092010_75099253 at /home/sandant/Desktop/testApp/app/views/leads/edit.html.haml:2)
+Rendered leads/edit.html.haml within layouts/application (57.9ms)
+Completed 200 OK in 2534ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyYPMAY/edit" for 127.0.0.1 at 2011-02-16 00:40:30 -0200
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyYPMAY"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml___58762524_82348500_75099253 at /home/sandant/Desktop/testApp/app/views/leads/edit.html.haml:2)
+Rendered leads/edit.html.haml within layouts/application (33.8ms)
+Completed 200 OK in 2011ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/003C0000015JCKyIAO/edit" for 127.0.0.1 at 2011-02-16 00:40:38 -0200
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCKyIAO"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml__908442780_84090440_75099253 at /home/sandant/Desktop/testApp/app/views/contacts/edit.html.haml:2)
+Rendered contacts/edit.html.haml within layouts/application (68.2ms)
+Completed 200 OK in 3908ms (Views: 91.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts/003C0000015JCKyIAO" for 127.0.0.1 at 2011-02-16 00:40:53 -0200
+  Processing by ContactsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "Id"=>"003C0000015JCKyIAO", "FirstName"=>"Pat2", "LastName"=>"Stumuller", "Phone"=>"(014) 427-4427", "Email"=>"pat@pyramid.net", "MailingStreet"=>"2 Place Jussieu", "MailingCity"=>"Paris", "MailingState"=>"", "MailingCountry"=>"France", "Description"=>"", "commit"=>"Edit", "id"=>"003C0000015JCKyIAO"}
+Completed   in 3386ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:152:in `update_sobject'
+  app/controllers/contacts_controller.rb:28:in `update'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.5ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (43.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:44:30 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (30.8ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 00:44:39 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 79ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwEDs1bebQ7R4NKhTjFSZEvN7bidWvdcX3d.KYOtuWQ5dm4fF4w%3D%3D" for 127.0.0.1 at 2011-02-16 00:44:45 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwEDs1bebQ7R4NKhTjFSZEvN7bidWvdcX3d.KYOtuWQ5dm4fF4w=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 4657ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:44:49 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (56.2ms)
+Completed 200 OK in 3456ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 00:45:21 -0200
+  Processing by LeadsController#index as HTML
+Rendered leads/index.html.haml within layouts/application (66.5ms)
+Completed 200 OK in 3633ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 00:45:27 -0200
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (59.1ms)
+Completed 200 OK in 3076ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/003C0000015JCLEIA4/edit" for 127.0.0.1 at 2011-02-16 00:45:33 -0200
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCLEIA4"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml___266479864_88667260_541621581 at /home/sandant/Desktop/testApp/app/views/contacts/edit.html.haml:2)
+Rendered contacts/edit.html.haml within layouts/application (136.3ms)
+Completed 200 OK in 3434ms (Views: 191.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts/003C0000015JCLEIA4" for 127.0.0.1 at 2011-02-16 00:45:47 -0200
+  Processing by ContactsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "Id"=>"003C0000015JCLEIA4", "FirstName"=>"Jake", "LastName"=>"Llorrac", "Phone"=>"", "Email"=>"", "MailingStreet"=>"", "MailingCity"=>"", "MailingState"=>"", "MailingCountry"=>"", "Description"=>"", "commit"=>"Edit", "id"=>"003C0000015JCLEIA4"}
+Completed   in 2277ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:153:in `update_sobject'
+  app/controllers/contacts_controller.rb:28:in `update'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.1ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (22.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.5ms)
+
+
+Started GET "/contacts/003C0000015JCLEIA4/edit" for 127.0.0.1 at 2011-02-16 00:46:26 -0200
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCLEIA4"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml___266479864_82723560_541621581 at /home/sandant/Desktop/testApp/app/views/contacts/edit.html.haml:2)
+Rendered contacts/edit.html.haml within layouts/application (78.6ms)
+Completed 200 OK in 2582ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/003C0000015dsaads4/edit" for 127.0.0.1 at 2011-02-16 00:46:36 -0200
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015dsaads4"}
+Rendered contacts/edit.html.haml within layouts/application (51.5ms)
+Completed 200 OK in 2115ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 00:46:44 -0200
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 4107ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/003C0000015JCL7IAO/edit" for 127.0.0.1 at 2011-02-16 00:46:53 -0200
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCL7IAO"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml___266479864_90243840_541621581 at /home/sandant/Desktop/testApp/app/views/contacts/edit.html.haml:2)
+Rendered contacts/edit.html.haml within layouts/application (61.6ms)
+Completed 200 OK in 2682ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 00:47:15 -0200
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (37.7ms)
+Completed 200 OK in 6056ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72l0IAA/edit" for 127.0.0.1 at 2011-02-16 00:47:24 -0200
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l0IAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___973757508_90292240_541621581 at /home/sandant/Desktop/testApp/app/views/accounts/edit.html.haml:2)
+Rendered accounts/edit.html.haml within layouts/application (65.4ms)
+Completed 200 OK in 7383ms (Views: 84.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/accounts/001C000000o72l0IAA" for 127.0.0.1 at 2011-02-16 00:47:35 -0200
+  Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "Id"=>"001C000000o72l0IAA", "Name"=>"United Oil & Gas, Singapore", "Phone"=>"(650) 450-8810", "Website"=>"http://www.uos.com", "BillingStreet"=>"9 Tagore Lane           Singapore, Singapore 787472           Singapore", "BillingState"=>"Singapore", "BillingCountry"=>"", "BillingCity"=>"Singapore", "Description"=>"", "commit"=>"Edit", "id"=>"001C000000o72l0IAA"}
+Redirected to http://localhost:3000/accounts/001C000000o72l0IAA/edit
+Completed 302 Found in 2596ms
+
+
+Started GET "/accounts/001C000000o72l0IAA/edit" for 127.0.0.1 at 2011-02-16 00:47:37 -0200
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l0IAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___973757508_82557400_541621581 at /home/sandant/Desktop/testApp/app/views/accounts/edit.html.haml:2)
+Rendered accounts/edit.html.haml within layouts/application (141.9ms)
+Completed 200 OK in 2517ms (Views: 155.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 00:47:52 -0200
+  Processing by LeadsController#index as HTML
+Rendered leads/index.html.haml within layouts/application (69.2ms)
+Completed 200 OK in 2032ms (Views: 91.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyY9MAI/edit" for 127.0.0.1 at 2011-02-16 00:47:58 -0200
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyY9MAI"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml__286419758_82729050_541621581 at /home/sandant/Desktop/testApp/app/views/leads/edit.html.haml:2)
+Rendered leads/edit.html.haml within layouts/application (43.3ms)
+Completed 200 OK in 2457ms (Views: 250.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads/00QC000000lzyY9MAI" for 127.0.0.1 at 2011-02-16 00:48:07 -0200
+  Processing by LeadsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "Id"=>"00QC000000lzyY9MAI", "FirstName"=>"Jefferson", "LastName"=>"Glimpse", "Email"=>"jeffg@jackson.com", "Company"=>"Jackson Controls", "Street"=>"", "State"=>"", "Country"=>"Taiwan", "City"=>"", "Description"=>"", "commit"=>"Edit", "id"=>"00QC000000lzyY9MAI"}
+Completed   in 2956ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:153:in `update_sobject'
+  app/controllers/leads_controller.rb:28:in `update'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.8ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:53:29 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (31.8ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 00:53:35 -0200
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 57ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwGTVS3jWwcQI4kVnt3NuYIHkQqTRg5avfYklF1WGOpA3jtbjCA%3D%3D" for 127.0.0.1 at 2011-02-16 00:53:40 -0200
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwGTVS3jWwcQI4kVnt3NuYIHkQqTRg5avfYklF1WGOpA3jtbjCA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3106ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 00:53:43 -0200
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (47.0ms)
+Completed 200 OK in 12367ms (Views: 70.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 00:54:00 -0200
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (128.8ms)
+Completed 200 OK in 3069ms (Views: 151.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/003C0000015JCL9IAO/edit" for 127.0.0.1 at 2011-02-16 00:54:07 -0200
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCL9IAO"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml___25713525_91351190_3096196 at /home/sandant/Desktop/testApp/app/views/contacts/edit.html.haml:2)
+Rendered contacts/edit.html.haml within layouts/application (64.3ms)
+Completed 200 OK in 3289ms (Views: 83.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts/003C0000015JCL9IAO" for 127.0.0.1 at 2011-02-16 00:54:14 -0200
+  Processing by ContactsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "Id"=>"003C0000015JCL9IAO", "FirstName"=>"Tom", "LastName"=>"Ripley", "Phone"=>"(650) 450-8810", "Email"=>"tripley@uog.com", "MailingStreet"=>"9 Tagore Lane           Singapore, Singapore 787472           Singapore", "MailingCity"=>"", "MailingState"=>"", "MailingCountry"=>"", "Description"=>"", "commit"=>"Edit", "id"=>"003C0000015JCL9IAO"}
+Completed   in 2622ms
+
+OAuth2::HTTPError (Received HTTP 400 during request.):
+  lib/oauth.rb:37:in `request'
+  lib/oauth.rb:8:in `request'
+  lib/sfrequest.rb:153:in `update_sobject'
+  app/controllers/contacts_controller.rb:28:in `update'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.9ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (71.9ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (90.4ms)
+
+
+Started GET "/contacts/003C0000015JCL9IAO/edit" for 127.0.0.1 at 2011-02-16 00:55:06 -0200
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCL9IAO"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml___25713525_91601370_3096196 at /home/sandant/Desktop/testApp/app/views/contacts/edit.html.haml:2)
+Rendered contacts/edit.html.haml within layouts/application (32.8ms)
+Completed 200 OK in 2792ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts/003C0000015JCL9IAO" for 127.0.0.1 at 2011-02-16 00:55:12 -0200
+  Processing by ContactsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CKazpu7bb5LW920Nmzi6wL6EbXhKNb8sy17exw0JJmw=", "Id"=>"003C0000015JCL9IAO", "FirstName"=>"Tom", "LastName"=>"Ripley", "Phone"=>"(650) 450-8810", "Email"=>"tripley@uog.com", "MailingStreet"=>"9 Tagore Lane           Singapore, Singapore 787472           Singapore", "MailingCity"=>"", "MailingState"=>"", "MailingCountry"=>"", "Description"=>"", "commit"=>"Edit", "id"=>"003C0000015JCL9IAO"}
+Redirected to http://localhost:3000/contacts/003C0000015JCL9IAO/edit
+Completed 302 Found in 2ms
+
+
+Started GET "/contacts/003C0000015JCL9IAO/edit" for 127.0.0.1 at 2011-02-16 00:55:13 -0200
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCL9IAO"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml___25713525_82485140_3096196 at /home/sandant/Desktop/testApp/app/views/contacts/edit.html.haml:2)
+Rendered contacts/edit.html.haml within layouts/application (135.2ms)
+Completed 200 OK in 3113ms (Views: 147.9ms | ActiveRecord: 0.0ms)

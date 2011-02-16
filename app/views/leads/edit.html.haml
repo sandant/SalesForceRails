@@ -1,0 +1,40 @@
+- @sobject["records"].each do |s|
+  - form_tag({:action => 'update'}, {:method => 'put'}) do
+    = hidden_field_tag 'Id', s["Id"]
+
+    .title_nf.dark_stripe
+      %h4.arrow-down.header-content= 'Lead Information'
+    = label_tag 'First Name'
+    = text_field_tag 'FirstName', s["FirstName"]
+    %br
+    = label_tag 'Last Name'
+    = text_field_tag 'LastName', s["LastName"]
+    %br
+    = label_tag 'Email'
+    = text_field_tag 'Email', s["Email"]
+    %br
+    = label_tag 'Company'
+    = text_field_tag 'Company', s["Company"], :class => 'last'
+    %br
+
+    .title_nf.dark_stripe
+      %h4.arrow-down.header-content= 'Address Information'
+    = label_tag 'Street'
+    = text_field_tag 'Street', s["Street"]
+    %br
+    = label_tag 'State'
+    = text_field_tag 'State', s["State"]
+    %br
+    = label_tag 'Country'
+    = text_field_tag 'Country', s["Country"]
+    %br
+    = label_tag 'City'
+    = text_field_tag 'City', s["City"], :class => 'last'
+    %br
+
+    .title_nf.dark_stripe
+      %h4.arrow-down.header-content= 'Description Information'
+    = label_tag 'Description'
+    = text_area_tag 'Description', s["Description"], :rows => 10, :cols => 75, :class => 'last'
+    %br
+    = submit_tag 'Edit'

@@ -12,8 +12,8 @@
         %ul
           %li.active= link_to 'Home', :controller => 'pages', :action => 'index'
           %li= link_to 'Accounts', accounts_url
-          %li= link_to 'Contacts', :controller => 'pages', :action => 'error'
-          %li= link_to 'Leads', :controller => 'pages', :action => 'error'
+          %li= link_to 'Contacts', contacts_url
+          %li= link_to 'Leads', leads_url
         = form_tag search_pages_path do
           - if params["s"].nil?
             - search = 'search...'

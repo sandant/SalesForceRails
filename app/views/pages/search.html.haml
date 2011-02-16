@@ -17,8 +17,8 @@
       - when 'Account'
         = link_to e["Name"], edit_account_url(:id => e["Id"])
       - when 'Contact'
-        = link_to e["Name"], edit_account_url(:id => e["Id"])
+        = link_to e["Name"], edit_contact_url(:id => e["Id"])
       - when 'Lead'
-        = link_to e["Name"], edit_account_url(:id => e["Id"])
+        = link_to e["Name"], edit_lead_url(:id => e["Id"])
     - last_obj = e["attributes"]["type"]
     %br

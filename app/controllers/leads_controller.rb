@@ -1,13 +1,13 @@
 require 'token'
 require 'sfrequest'
 
-class AccountsController < ApplicationController
-
+class LeadsController < ApplicationController
+  
   def index
     if Token::get_token.nil?
       redirect_to :controller => 'pages', :action => 'index'      
     else
-      @sobjects = SFRequest::get_sobjects 'Account'
+      @sobjects = SFRequest::get_sobjects 'Lead'
     end
   end
 
@@ -16,7 +16,7 @@ class AccountsController < ApplicationController
       redirect_to :controller => 'pages', :action => 'index'      
     else
       unless params['id'].nil?
-        @sobject = SFRequest::get_sobject params['id'], 'Account'
+        @sobject = SFRequest::get_sobject params['id'], 'Lead'
       else
         redirect_to :controller => 'pages', :action => 'index'
       end
@@ -25,18 +25,18 @@ class AccountsController < ApplicationController
 
   def update
     unless params.nil?
-      SFRequest::update_sobject params, 'Account'
-      flash[:message] = 'Updated account'
+      SFRequest::update_sobject params, 'Lead'
+      flash[:message] = 'Updated leads'
       redirect_to :action => 'edit', :id => params['Id']
     else
       redirect_to :controller => 'pages', :action => 'index'
     end
   end
 
-  def delete
+  def show
   end
 
-  def show
+  def delete
   end
 
 end

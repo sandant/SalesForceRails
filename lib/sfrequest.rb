@@ -47,7 +47,8 @@ module SFRequest
                 LIMIT 100"
       when 'Lead'
         uri += "SELECT Id,
-                       Name
+                       FirstName,
+                       LastName
                 FROM Lead 
                 LIMIT 100"
     end
@@ -75,13 +76,29 @@ module SFRequest
                 LIMIT 1"
       when 'Contact'
         uri += "SELECT Id, 
-                       Name 
+                       Phone, 
+                       MailingStreet, 
+                       MailingState, 
+                       MailingCountry, 
+                       MailingCity, 
+                       LastName, 
+                       FirstName, 
+                       Email, 
+                       Description 
                 FROM Contact 
                 WHERE Id = '#{id}' 
                 LIMIT 1"
       when 'Lead'
         uri += "SELECT Id, 
-                       Name 
+                       Street, 
+                       State, 
+                       LastName, 
+                       FirstName, 
+                       Email, 
+                       Description, 
+                       Country, 
+                       Company, 
+                       City 
                 FROM Lead 
                 WHERE Id = '#{id}' 
                 LIMIT 1"
@@ -108,29 +125,32 @@ module SFRequest
                       }"
       when 'Contact'
         params_json = "{
-                        \"Name\":\"#{sobject["Name"]}\",
+                        \"FirstName\":\"#{sobject["FirstName"]}\",
+                        \"LastName\":\"#{sobject["LastName"]}\",
                         \"Website\":\"#{sobject["Website"]}\",
+                        \"Phone\":\"#{sobject["Phone"]}\",
                         \"Description\":\"#{sobject["Description"]}\",
-                        \"BillingStreet\":\"#{sobject["BillingStreet"]}\",
-                        \"BillingState\":\"#{sobject["BillingState"]}\",
-                        \"BillingPostalCode\":\"#{sobject["BillingPostalCode"]}\",
-                        \"BillingCountry\":\"#{sobject["BillingCountry"]}\",
-                        \"BillingCity\":\"#{sobject["BillingCity"]}\"
+                        \"MailingStreet\":\"#{sobject["MailingStreet"]}\",
+                        \"MailingState\":\"#{sobject["MailingState"]}\",
+                        \"MailingCountry\":\"#{sobject["MailingCountry"]}\",
+                        \"MailingCity\":\"#{sobject["MailingCity"]}\",
+                        \"Email\":\"#{sobject["Email"]}\"
                       }"
       when 'Lead'
         params_json = "{
-                        \"Name\":\"#{sobject["Name"]}\",
-                        \"Website\":\"#{sobject["Website"]}\",
+                        \"Street\":\"#{sobject["Street"]}\",
+                        \"State\":\"#{sobject["State"]}\",
+                        \"LastName\":\"#{sobject["LastName"]}\",
+                        \"FirstName\":\"#{sobject["FirstName"]}\",
+                        \"Email\":\"#{sobject["Email"]}\",
                         \"Description\":\"#{sobject["Description"]}\",
-                        \"BillingStreet\":\"#{sobject["BillingStreet"]}\",
-                        \"BillingState\":\"#{sobject["BillingState"]}\",
-                        \"BillingPostalCode\":\"#{sobject["BillingPostalCode"]}\",
-                        \"BillingCountry\":\"#{sobject["BillingCountry"]}\",
-                        \"BillingCity\":\"#{sobject["BillingCity"]}\"
+                        \"Country\":\"#{sobject["Country"]}\",
+                        \"Company\":\"#{sobject["Company"]}\"
+                        \"City\":\"#{sobject["City"]}\",
                       }"
     end
 
-    Token::get_token.post("#{INSTANCE_URL}sobjects/Account/#{sobject["Id"]}?_HttpMethod=PATCH", 
+    Token::get_token.post("#{INSTANCE_URL}sobjects/#{type}/#{sobject["Id"]}?_HttpMethod=PATCH", 
                           params_json, 
                           {'Content-type' => 'application/json'})
   end

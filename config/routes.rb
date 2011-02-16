@@ -11,6 +11,18 @@ TestApp::Application.routes.draw do
     end
   end
 
+  resources :contacts do
+    collection do
+      get :index, :as => 'index'
+    end
+  end
+
+  resources :leads do
+    collection do
+      get :index, :as => 'index'
+    end
+  end
+
   get 'pages/error'
   resources :pages do
     collection do
