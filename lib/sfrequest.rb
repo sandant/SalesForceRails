@@ -19,6 +19,31 @@ module SFRequest
     return response
   end
 
+  def SFRequest.get_sticky_notes
+    query = 'SELECT Id,
+                    Body__c,
+                    Hours__c,
+                    Owner__c,
+                    Project__c,
+                    Status__c,
+                    Sprint__c
+             FROM StickyNote__c
+             ORDER BY Status__c
+             LIMIT 100'
+    
+    response = JSON.parse(Token::get_token.get("#{INSTANCE_URL}query/?q=#{CGI::escape(query)}"))
+
+    =begin
+    json["records"].each do |r|
+      case r["Status__c"]
+        when "Open"
+          
+      end
+    end
+    =end
+
+  end
+
   def SFRequest.search keyword
     query = "FIND {*#{keyword}*} 
              IN ALL FIELDS 

@@ -6045,3 +6045,2969 @@ Started GET "/accounts/001C000000o72l4IAA/edit" for 127.0.0.1 at 2011-02-16 05:2
 DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___549151386__614002628_769523358 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
 Rendered accounts/edit.html.haml within layouts/application (29.8ms)
 Completed 200 OK in 1165ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72l4IAA/edit" for 127.0.0.1 at 2011-02-16 05:50:41 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l4IAA"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 05:50:42 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (22.1ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 05:50:45 -0800
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 22ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwDf978zUO7Ot3SXUGEafdxrARln66me0_mZ8A3FHdmSjVztNrw%3D%3D" for 127.0.0.1 at 2011-02-16 05:50:48 -0800
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwDf978zUO7Ot3SXUGEafdxrARln66me0_mZ8A3FHdmSjVztNrw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2283ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 05:50:51 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (23.6ms)
+Completed 200 OK in 1295ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 05:51:20 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (22.2ms)
+Completed 200 OK in 1380ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 05:54:32 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (24.6ms)
+Completed 200 OK in 1280ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?class=active" for 127.0.0.1 at 2011-02-16 05:54:37 -0800
+  Processing by PagesController#index as HTML
+  Parameters: {"class"=>"active"}
+Rendered pages/index.html.haml within layouts/application (23.0ms)
+Completed 200 OK in 1022ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?class=active" for 127.0.0.1 at 2011-02-16 05:55:09 -0800
+  Processing by PagesController#index as HTML
+  Parameters: {"class"=>"active"}
+Rendered pages/index.html.haml within layouts/application (21.8ms)
+Completed 200 OK in 931ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 05:55:13 -0800
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (21.1ms)
+Completed 200 OK in 1326ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 05:56:49 -0800
+  Processing by AccountsController#index as HTML
+ERROR: compiling _app_views_layouts_application_html_haml__830599485_81686050_55292108 RAISED /home/sandant/Desktop/SalesForceRails/app/views/layouts/application.html.haml:15: syntax error, unexpected ',', expecting tASSOC
+...pages', :action => 'index', {}, :class = 'active'
+...                               ^
+Function body:           def _app_views_layouts_application_html_haml__830599485_81686050_55292108(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<!DOCTYPE html>\n<html>\n  <head>\n    <title>Sticky Note</title>\n    #{
+
+
+
+_hamlout.adjust_tabs(2); _hamlout.format_script_false_false_false_true_false_true_false(( stylesheet_link_tag :all
+));}\n    #{_hamlout.format_script_false_false_false_true_false_true_false(( javascript_include_tag :defaults
+));}\n    #{_hamlout.format_script_false_false_false_true_false_true_false(( csrf_meta_tag
+));}\n  </head>\n  <body>\n    <div id='wrapper'>\n      <div id='header'></div>\n      <div class='dark_stripe' id='menu'>\n        <ul>\n", 3, false);
+
+
+
+
+ if request.params["controller"] = 'pages' && request.params["action"] == 'index';
+_hamlout.push_text("          #{_hamlout.format_script_false_false_false_true_false_true_false(( active = 'active'
+));}\n", 0, false);end;_hamlout.push_text("          <li class='active'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to 'Home', :controller => 'pages', :action => 'index', {}, :class = 'active'
+));}</li>\n          <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to 'Accounts', accounts_url
+));}</li>\n          <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to 'Contacts', contacts_url
+));}</li>\n          <li>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to 'Leads', leads_url
+));}</li>\n        </ul>\n        ", -1, false);haml_temp =  form_tag search_pages_path do;
+ if params["s"].nil?;
+ search = 'search...';
+ else;
+ search = params["s"];
+end;_hamlout.push_text("        <div id='search'>\n          #{
+_hamlout.adjust_tabs(1); _hamlout.format_script_false_false_false_true_false_true_false(( text_field_tag 's', search, :class => 'sbox', :tabindex => '1'
+));}\n          #{_hamlout.format_script_false_false_false_true_false_true_false(( image_submit_tag '/images/search-icon-small-white.png', :tabindex => '2', :id => 'sbutton', :alt => 'Search'
+));}\n        </div>\n", -1, false);end;_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n      </div>\n      <div id='section_info'>\n        <div id='info_text'>\n          <h1>Connecting with SalesForce using Ruby on Rails</h1>\n          <div class='blurb'>lalalala H skjdsdskj</div>\n        </div>\n      </div>\n      <div id='body'>\n", 0, false);
+
+
+
+
+ unless flash[:message].blank?;
+_hamlout.push_text("        <div class='alert'>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((flash[:message]
+));}</div>\n", 0, false);end;_hamlout.push_text("        #{_hamlout.format_script_false_false_false_true_false_true_false(( yield
+));}\n      </div>\n      <div class='dark_stripe' id='footer'>\n        Derechos Reservados - Demos 2011\n      </div>\n    </div>\n  </body>\n</html>\n", -4, false);
+::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_view/template.rb:255:in `module_eval'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_view/template.rb:255:in `compile'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `block in render'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:62:in `block in _render_template'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/haml-3.0.25/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/sandant/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:435:in `_run__77758373__process_action__851275058__callbacks'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `block in instrument'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `block in action'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `block in call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/sass-3.1.0.alpha.221/lib/sass/plugin/rack.rb:54:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `block in call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/home/sandant/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/sandant/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/sandant/.rvm/rubies/ruby-1.9.2-p136/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered accounts/index.html.haml within layouts/application (16.9ms)
+Completed   in 1495ms
+
+ActionView::Template::Error (/home/sandant/Desktop/SalesForceRails/app/views/layouts/application.html.haml:15: syntax error, unexpected ',', expecting tASSOC
+...pages', :action => 'index', {}, :class = 'active'
+...                               ^):
+    12:         %ul
+    13:           - if request.params["controller"] = 'pages' && request.params["action"] == 'index'
+    14:             = active = 'active'
+    15:           %li.active= link_to 'Home', :controller => 'pages', :action => 'index', {}, :class = 'active'
+    16:           %li= link_to 'Accounts', accounts_url
+    17:           %li= link_to 'Contacts', contacts_url
+    18:           %li= link_to 'Leads', leads_url
+  
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.8ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 06:03:12 -0800
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (22.0ms)
+Completed 200 OK in 1512ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 06:03:16 -0800
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (21.3ms)
+Completed 200 OK in 1875ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 06:03:19 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (23.9ms)
+Completed 200 OK in 1283ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 06:03:50 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (23.3ms)
+Completed 200 OK in 2070ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 06:03:56 -0800
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (20.6ms)
+Completed 200 OK in 2778ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 06:05:12 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (24.8ms)
+Completed 200 OK in 1524ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 06:05:16 -0800
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (22.0ms)
+Completed 200 OK in 972ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72l7IAA/edit" for 127.0.0.1 at 2011-02-16 06:05:33 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l7IAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml__728077611_81571630_55292108 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered accounts/edit.html.haml within layouts/application (31.9ms)
+Completed 200 OK in 1300ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 06:05:36 -0800
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (22.9ms)
+Completed 200 OK in 1147ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 06:05:39 -0800
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (27.6ms)
+Completed 200 OK in 886ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 06:05:41 -0800
+  Processing by LeadsController#index as HTML
+Rendered leads/index.html.haml within layouts/application (29.6ms)
+Completed 200 OK in 1103ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 06:05:43 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (28.1ms)
+Completed 200 OK in 1066ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 06:05:51 -0800
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (26.7ms)
+Completed 200 OK in 7479ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 06:08:10 -0800
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (27.9ms)
+Completed 200 OK in 1233ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 06:08:13 -0800
+  Processing by LeadsController#index as HTML
+Rendered leads/index.html.haml within layouts/application (68.9ms)
+Completed 200 OK in 1754ms (Views: 79.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 06:08:16 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (25.6ms)
+Completed 200 OK in 1285ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 06:08:19 -0800
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (67.7ms)
+Completed 200 OK in 1733ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 06:08:22 -0800
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (26.6ms)
+Completed 200 OK in 1043ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 06:08:25 -0800
+  Processing by LeadsController#index as HTML
+Rendered leads/index.html.haml within layouts/application (25.9ms)
+Completed 200 OK in 1134ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyY7MAI/edit" for 127.0.0.1 at 2011-02-16 06:08:32 -0800
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyY7MAI"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml___1025737165_80465010_55292108 at /home/sandant/Desktop/SalesForceRails/app/views/leads/edit.html.haml:2)
+Rendered leads/edit.html.haml within layouts/application (29.4ms)
+Completed 200 OK in 1140ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 06:10:14 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (24.9ms)
+Completed 200 OK in 1311ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 06:10:24 -0800
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (24.8ms)
+Completed 200 OK in 954ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 06:10:27 -0800
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (25.9ms)
+Completed 200 OK in 922ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 06:10:28 -0800
+  Processing by LeadsController#index as HTML
+Rendered leads/index.html.haml within layouts/application (30.2ms)
+Completed 200 OK in 1594ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 06:10:31 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (25.2ms)
+Completed 200 OK in 1031ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 06:17:23 -0800
+  Processing by AccountsController#index as HTML
+Rendered accounts/index.html.haml within layouts/application (25.9ms)
+Completed 200 OK in 1337ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 06:17:34 -0800
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (26.9ms)
+Completed 200 OK in 1980ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 06:21:17 -0800
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (19.0ms)
+Completed   in 1773ms
+
+ActionView::Template::Error (Missing partial contacts/menu with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml, :haml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/sandant/Desktop/SalesForceRails/app/views"):
+    9:     #wrapper
+    10:       #header
+    11:       #menu.dark_stripe
+    12:         - render 'menu', :request => request
+    13:         = form_tag search_pages_path do
+    14:           - if params["s"].nil?
+    15:             - search = 'search...'
+  app/views/layouts/application.html.haml:12:in `_app_views_layouts_application_html_haml__830599485_79823630_55292108'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.2ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 06:21:59 -0800
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (23.1ms)
+Completed   in 1569ms
+
+ActionView::Template::Error (Missing partial ../layouts/menu with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml, :haml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/sandant/Desktop/SalesForceRails/app/views"):
+    9:     #wrapper
+    10:       #header
+    11:       #menu.dark_stripe
+    12:         - render '../layouts/menu', :request => request
+    13:         = form_tag search_pages_path do
+    14:           - if params["s"].nil?
+    15:             - search = 'search...'
+  app/views/layouts/application.html.haml:12:in `_app_views_layouts_application_html_haml__830599485_81450670_55292108'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.4ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 06:24:12 -0800
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (23.1ms)
+Completed   in 1318ms
+
+ActionView::Template::Error (Missing partial ../../layouts/menu with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml, :haml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/sandant/Desktop/SalesForceRails/app/views"):
+    9:     #wrapper
+    10:       #header
+    11:       #menu.dark_stripe
+    12:         - render :partial => '../../layouts/menu', :request => request
+    13:         = form_tag search_pages_path do
+    14:           - if params["s"].nil?
+    15:             - search = 'search...'
+  app/views/layouts/application.html.haml:12:in `_app_views_layouts_application_html_haml__830599485_79790600_55292108'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 06:24:28 -0800
+  Processing by ContactsController#index as HTML
+Rendered contacts/index.html.haml within layouts/application (20.7ms)
+Completed   in 1494ms
+
+ActionView::Template::Error (Missing partial ../layouts/menu with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml, :haml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/sandant/Desktop/SalesForceRails/app/views"):
+    9:     #wrapper
+    10:       #header
+    11:       #menu.dark_stripe
+    12:         - render :partial => '../layouts/menu', :request => request
+    13:         = form_tag search_pages_path do
+    14:           - if params["s"].nil?
+    15:             - search = 'search...'
+  app/views/layouts/application.html.haml:12:in `_app_views_layouts_application_html_haml__830599485_81602330_55292108'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 06:25:54 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered contacts/index.html.haml within layouts/application (30.5ms)
+Completed 200 OK in 10904ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 06:26:22 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J4fQC8cnr3hfOYDn+QNuEEvAMrQUfZkUyEEepoQY/VM=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/search.html.haml within layouts/application (30.6ms)
+Completed 200 OK in 1372ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 12:28:22 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J4fQC8cnr3hfOYDn+QNuEEvAMrQUfZkUyEEepoQY/VM=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/search.html.haml within layouts/application (30.6ms)
+Completed 200 OK in 1143ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 12:32:23 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J4fQC8cnr3hfOYDn+QNuEEvAMrQUfZkUyEEepoQY/VM=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered pages/search.html.haml within layouts/application (31.7ms)
+Completed 200 OK in 2521ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 12:32:29 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J4fQC8cnr3hfOYDn+QNuEEvAMrQUfZkUyEEepoQY/VM=", "s"=>"", "x"=>"0", "y"=>"0"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:32:29 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered pages/index.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 2487ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:33:01 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (30.4ms)
+Completed 200 OK in 1293ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:33:04 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered accounts/index.html.haml within layouts/application (26.2ms)
+Completed 200 OK in 1162ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 12:33:07 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered contacts/index.html.haml within layouts/application (32.3ms)
+Completed 200 OK in 1035ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 12:33:10 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered leads/index.html.haml within layouts/application (29.4ms)
+Completed 200 OK in 955ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:33:13 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (44.8ms)
+Rendered pages/index.html.haml within layouts/application (70.1ms)
+Completed 200 OK in 6404ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:33:20 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered accounts/index.html.haml within layouts/application (30.2ms)
+Completed 200 OK in 1268ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 12:33:32 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered contacts/index.html.haml within layouts/application (31.9ms)
+Completed 200 OK in 1102ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 12:33:35 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered leads/index.html.haml within layouts/application (32.4ms)
+Completed 200 OK in 1030ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:34:21 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/index.html.haml within layouts/application (28.2ms)
+Completed 200 OK in 1011ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:34:25 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered accounts/index.html.haml within layouts/application (27.1ms)
+Completed 200 OK in 1187ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72kyIAA/edit" for 127.0.0.1 at 2011-02-16 12:34:29 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml__728077611_79778090_55292108 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered accounts/edit.html.haml within layouts/application (31.7ms)
+Completed 200 OK in 1016ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:34:33 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered accounts/index.html.haml within layouts/application (28.5ms)
+Completed 200 OK in 927ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72l0IAA/edit" for 127.0.0.1 at 2011-02-16 12:36:14 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l0IAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml__728077611_74417250_55292108 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (7.2ms)
+Rendered accounts/edit.html.haml within layouts/application (34.8ms)
+Completed 200 OK in 1021ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/accounts/001C000000o72l0IAA" for 127.0.0.1 at 2011-02-16 12:36:17 -0800
+  Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J4fQC8cnr3hfOYDn+QNuEEvAMrQUfZkUyEEepoQY/VM=", "Id"=>"001C000000o72l0IAA", "Name"=>"United Oil & Gas, Singapore", "Phone"=>"(650) 450-8810", "Website"=>"http://www.uos.com", "BillingStreet"=>"9 Tagore Lane           Singapore, Singapore 787472           Singapore", "BillingState"=>"Singapore", "BillingCountry"=>"", "BillingCity"=>"Singapore", "Description"=>"", "commit"=>"Edit", "id"=>"001C000000o72l0IAA"}
+Redirected to http://localhost:3000/accounts/001C000000o72l0IAA/edit
+Completed 302 Found in 1245ms
+
+
+Started GET "/accounts/001C000000o72l0IAA/edit" for 127.0.0.1 at 2011-02-16 12:36:18 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l0IAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml__728077611_80650530_55292108 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered accounts/edit.html.haml within layouts/application (33.9ms)
+Completed 200 OK in 1168ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 12:36:22 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered contacts/index.html.haml within layouts/application (28.9ms)
+Completed 200 OK in 1157ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 12:36:29 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered leads/index.html.haml within layouts/application (27.7ms)
+Completed 200 OK in 1212ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:36:32 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered accounts/index.html.haml within layouts/application (27.1ms)
+Completed 200 OK in 1177ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:36:34 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.0ms)
+Rendered pages/index.html.haml within layouts/application (28.6ms)
+Completed 200 OK in 978ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 12:36:39 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J4fQC8cnr3hfOYDn+QNuEEvAMrQUfZkUyEEepoQY/VM=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/search.html.haml within layouts/application (33.7ms)
+Completed 200 OK in 2238ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72kzIAA/edit" for 127.0.0.1 at 2011-02-16 12:36:52 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kzIAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml__728077611_80036140_55292108 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered accounts/edit.html.haml within layouts/application (37.2ms)
+Completed 200 OK in 2174ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:37:21 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered accounts/index.html.haml within layouts/application (27.4ms)
+Completed 200 OK in 1063ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72l0IAA/edit" for 127.0.0.1 at 2011-02-16 12:37:24 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l0IAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml__728077611_80115430_55292108 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered accounts/edit.html.haml within layouts/application (33.0ms)
+Completed 200 OK in 1104ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:37:34 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.0ms)
+Rendered pages/index.html.haml within layouts/application (31.0ms)
+Completed 200 OK in 2983ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 12:37:40 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered leads/index.html.haml within layouts/application (28.4ms)
+Completed 200 OK in 1204ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyYEMAY/edit" for 127.0.0.1 at 2011-02-16 12:37:43 -0800
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyYEMAY"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml___1025737165_81463840_55292108 at /home/sandant/Desktop/SalesForceRails/app/views/leads/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered leads/edit.html.haml within layouts/application (33.7ms)
+Completed 200 OK in 2499ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 12:41:11 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J4fQC8cnr3hfOYDn+QNuEEvAMrQUfZkUyEEepoQY/VM=", "s"=>"search...", "x"=>"11", "y"=>"8"}
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered pages/search.html.haml within layouts/application (28.9ms)
+Completed 200 OK in 5476ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:41:34 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/index.html.haml within layouts/application (29.7ms)
+Completed 200 OK in 1519ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:41:48 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered accounts/index.html.haml within layouts/application (29.4ms)
+Completed 200 OK in 1133ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 12:41:51 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered contacts/index.html.haml within layouts/application (30.6ms)
+Completed 200 OK in 1242ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 12:41:54 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered leads/index.html.haml within layouts/application (30.9ms)
+Completed 200 OK in 1267ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyYLMAY/edit" for 127.0.0.1 at 2011-02-16 12:42:06 -0800
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyYLMAY"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml___1025737165_81339770_55292108 at /home/sandant/Desktop/SalesForceRails/app/views/leads/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered leads/edit.html.haml within layouts/application (36.5ms)
+Completed 200 OK in 1018ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:42:17 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (27.4ms)
+Completed 200 OK in 1048ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 12:42:25 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J4fQC8cnr3hfOYDn+QNuEEvAMrQUfZkUyEEepoQY/VM=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/search.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 1406ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:42:33 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered accounts/index.html.haml within layouts/application (27.3ms)
+Completed 200 OK in 1291ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:22:15 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (9.2ms)
+Rendered pages/index.html.haml within layouts/application (74.8ms)
+Completed 200 OK in 93ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:22:52 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered pages/index.html.haml within layouts/application (26.9ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:24:57 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (26.7ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:25:13 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered pages/index.html.haml within layouts/application (27.3ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:25:47 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (27.9ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:25:51 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered pages/index.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:25:53 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (26.8ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:35:14 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (17.7ms)
+Completed   in 24ms
+
+ActionView::Template::Error (No expansion found for :main):
+    4:     %title Sticky Note
+    5:     = stylesheet_link_tag :all
+    6:     = javascript_include_tag :defaults
+    7:     = javascript_include_tag :main
+    8:     = csrf_meta_tag
+    9:   %body
+    10:     #wrapper
+  app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml__295079132_92187520_819300174'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:36:25 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (61.7ms)
+Completed   in 68ms
+
+ActionView::Template::Error (Missing partial pages/menu with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml, :haml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/sandant/Desktop/SalesForceRails/app/views"):
+    10:     #wrapper
+    11:       #header
+    12:       #menu.dark_stripe
+    13:         = render :partial => 'menu', :locals => {:request => request}
+    14:         = form_tag search_pages_path do
+    15:           - if params["s"].nil?
+    16:             - search = 'search...'
+  app/views/layouts/application.html.haml:13:in `_app_views_layouts_application_html_haml__295079132_80340660_819300174'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:37:00 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.0ms)
+Rendered pages/index.html.haml within layouts/application (27.3ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:38:02 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/index.html.haml within layouts/application (27.9ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:39:04 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/index.html.haml within layouts/application (27.6ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:39:37 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered pages/index.html.haml within layouts/application (26.9ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 08:39:48 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5glL7oyjMdT2yWUVdyTwxo/jtOp1hFhruSM1b2NaTjE=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:39:48 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered pages/index.html.haml within layouts/application (27.2ms)
+Completed 200 OK in 33ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 08:39:58 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5glL7oyjMdT2yWUVdyTwxo/jtOp1hFhruSM1b2NaTjE=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:39:58 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/index.html.haml within layouts/application (27.4ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 08:40:02 -0800
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 23ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwPJKWT4A6p3vK2MxjqMau2GXqZAuou48lAFkI.L52bB0LDjWzQ%3D%3D" for 127.0.0.1 at 2011-02-16 08:40:22 -0800
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwPJKWT4A6p3vK2MxjqMau2GXqZAuou48lAFkI.L52bB0LDjWzQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1413ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:40:24 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.0ms)
+Rendered pages/index.html.haml within layouts/application (28.2ms)
+Completed 200 OK in 1074ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 08:40:36 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5glL7oyjMdT2yWUVdyTwxo/jtOp1hFhruSM1b2NaTjE=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/search.html.haml within layouts/application (29.3ms)
+Completed 200 OK in 1860ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72kyIAA/edit" for 127.0.0.1 at 2011-02-16 08:41:16 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___562304602_86031880_819300174 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered accounts/edit.html.haml within layouts/application (75.9ms)
+Completed 200 OK in 1295ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72kyIAA/edit" for 127.0.0.1 at 2011-02-16 08:41:44 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___562304602_93336850_819300174 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered accounts/edit.html.haml within layouts/application (34.2ms)
+Completed 200 OK in 974ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 08:41:48 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5glL7oyjMdT2yWUVdyTwxo/jtOp1hFhruSM1b2NaTjE=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/search.html.haml within layouts/application (71.8ms)
+Completed 200 OK in 1217ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72kyIAA/edit" for 127.0.0.1 at 2011-02-16 08:42:02 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___562304602_93571560_819300174 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered accounts/edit.html.haml within layouts/application (35.5ms)
+Completed 200 OK in 943ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 08:42:05 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered contacts/index.html.haml within layouts/application (27.3ms)
+Completed 200 OK in 1352ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 08:42:09 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered leads/index.html.haml within layouts/application (28.8ms)
+Completed 200 OK in 930ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 08:42:11 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered accounts/index.html.haml within layouts/application (25.7ms)
+Completed 200 OK in 1262ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 08:46:49 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered contacts/index.html.haml within layouts/application (28.7ms)
+Completed 200 OK in 1495ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 08:46:52 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered leads/index.html.haml within layouts/application (28.3ms)
+Completed 200 OK in 1141ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 08:50:09 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered contacts/index.html.haml within layouts/application (27.4ms)
+Completed 200 OK in 1069ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 08:50:12 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered accounts/index.html.haml within layouts/application (27.5ms)
+Completed 200 OK in 1456ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:50:19 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/index.html.haml within layouts/application (27.2ms)
+Completed 200 OK in 919ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 08:50:36 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered leads/index.html.haml within layouts/application (30.1ms)
+Completed 200 OK in 898ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:50:39 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (27.4ms)
+Completed 200 OK in 6059ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 08:50:55 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5glL7oyjMdT2yWUVdyTwxo/jtOp1hFhruSM1b2NaTjE=", "s"=>"pablo pasame", "x"=>"0", "y"=>"0"}
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/search.html.haml within layouts/application (30.7ms)
+Completed 200 OK in 1145ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:52:17 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/index.html.haml within layouts/application (27.7ms)
+Completed 200 OK in 1603ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 08:52:22 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered accounts/index.html.haml within layouts/application (29.1ms)
+Completed 200 OK in 933ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72l9IAA/edit" for 127.0.0.1 at 2011-02-16 08:52:25 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l9IAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___562304602_91880010_819300174 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (7.0ms)
+Rendered accounts/edit.html.haml within layouts/application (33.3ms)
+Completed 200 OK in 1031ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 08:52:42 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/index.html.haml within layouts/application (28.7ms)
+Completed 200 OK in 933ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:01:26 -0800
+  Processing by PagesController#index as HTML
+Completed   in 1529ms
+
+NoMethodError (undefined method `get_sticky_notes' for SFRequest:Module):
+  app/controllers/pages_controller.rb:10:in `index'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:09:27 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.1ms)
+Rendered pages/index.html.haml within layouts/application (66.3ms)
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:11:33 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (65.8ms)
+Completed 200 OK in 72ms (Views: 71.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 09:11:50 -0800
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 23ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwN3.U9rcgi.Ba9lPNxN7Kd8DD8J42_zHi_1Tl5CjyLQ25wiPIQ%3D%3D" for 127.0.0.1 at 2011-02-16 09:11:53 -0800
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwN3.U9rcgi.Ba9lPNxN7Kd8DD8J42_zHi_1Tl5CjyLQ25wiPIQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2566ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:11:56 -0800
+  Processing by PagesController#index as HTML
+Completed   in 1214ms
+
+NoMethodError (undefined method `get_sticky_notes' for SFRequest:Module):
+  app/controllers/pages_controller.rb:10:in `index'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:12:27 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/index.html.haml within layouts/application (63.7ms)
+Completed 200 OK in 70ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 09:12:39 -0800
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 23ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwNh3KAnP0MGhQFLys71p9xZHsIdOhBwrVDvqsMpOHmjqYUgmDg%3D%3D" for 127.0.0.1 at 2011-02-16 09:12:40 -0800
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwNh3KAnP0MGhQFLys71p9xZHsIdOhBwrVDvqsMpOHmjqYUgmDg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1973ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:12:42 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/index.html.haml within layouts/application (27.7ms)
+Completed 200 OK in 2950ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:22:05 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered pages/index.html.haml within layouts/application (28.3ms)
+Completed 200 OK in 5010ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:33:37 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/index.html.haml within layouts/application (65.3ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 09:33:42 -0800
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 23ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwENWRI1w4BYaPKujqfKVesLXYxnHXzO_W7wZ77632SfmNFquvQ%3D%3D" for 127.0.0.1 at 2011-02-16 09:33:45 -0800
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwENWRI1w4BYaPKujqfKVesLXYxnHXzO_W7wZ77632SfmNFquvQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1687ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:33:46 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered pages/index.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 2600ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:35:45 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (66.8ms)
+Completed 200 OK in 2522ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:39:26 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (3.3ms)
+Completed   in 2179ms
+
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    4: - else
+    5:   #left_column
+    6:     .status_notes Open
+    7:       = @sticky_notes
+    8:     .status_notes In Progress
+    9:       dsasad
+    10:     .status_notes Resolved
+  app/views/pages/index.html.haml:7
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (46.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (54.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:40:40 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/index.html.haml within layouts/application (32.6ms)
+Completed 200 OK in 2094ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/light-bar-hover.jpg" for 127.0.0.1 at 2011-02-16 09:40:43 -0800
+
+ActionController::RoutingError (No route matches "/stylesheets/light-bar-hover.jpg"):
+  
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:41:44 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered pages/index.html.haml within layouts/application (34.3ms)
+Completed 200 OK in 2377ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/light-bar-hover.jpg" for 127.0.0.1 at 2011-02-16 09:41:46 -0800
+
+ActionController::RoutingError (No route matches "/stylesheets/light-bar-hover.jpg"):
+  
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:43:12 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/index.html.haml within layouts/application (30.5ms)
+Completed 200 OK in 2747ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/light-bar-hover.jpg" for 127.0.0.1 at 2011-02-16 09:43:15 -0800
+
+ActionController::RoutingError (No route matches "/stylesheets/light-bar-hover.jpg"):
+  
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:43:38 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.1ms)
+Rendered pages/index.html.haml within layouts/application (73.3ms)
+Completed 200 OK in 3704ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:44:17 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered pages/index.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 3320ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:44:47 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (32.0ms)
+Completed 200 OK in 3421ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:47:07 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/index.html.haml within layouts/application (31.2ms)
+Completed 200 OK in 3110ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:47:38 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (32.1ms)
+Completed 200 OK in 4521ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 09:48:06 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered accounts/index.html.haml within layouts/application (26.5ms)
+Completed 200 OK in 1017ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 09:48:09 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered contacts/index.html.haml within layouts/application (72.6ms)
+Completed 200 OK in 1004ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 09:48:11 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered leads/index.html.haml within layouts/application (30.2ms)
+Completed 200 OK in 1027ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyY8MAI/edit" for 127.0.0.1 at 2011-02-16 09:48:14 -0800
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyY8MAI"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml___470331612_81241150_362481462 at /home/sandant/Desktop/SalesForceRails/app/views/leads/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (48.8ms)
+Rendered leads/edit.html.haml within layouts/application (78.9ms)
+Completed 200 OK in 1005ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads/00QC000000lzyY8MAI" for 127.0.0.1 at 2011-02-16 09:48:18 -0800
+  Processing by LeadsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "Id"=>"00QC000000lzyY8MAI", "FirstName"=>"Sebastian", "LastName"=>"Cotton", "Email"=>"pcotton@abbottins.net", "Company"=>"Abbott Insurance", "Street"=>"", "State"=>"VA", "Country"=>"USA", "City"=>"", "Description"=>"", "commit"=>"Edit", "id"=>"00QC000000lzyY8MAI"}
+Redirected to http://localhost:3000/leads/00QC000000lzyY8MAI/edit
+Completed 302 Found in 1330ms
+
+
+Started GET "/leads/00QC000000lzyY8MAI/edit" for 127.0.0.1 at 2011-02-16 09:48:20 -0800
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyY8MAI"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml___470331612_82251440_362481462 at /home/sandant/Desktop/SalesForceRails/app/views/leads/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered leads/edit.html.haml within layouts/application (32.5ms)
+Completed 200 OK in 921ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 09:48:23 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered accounts/index.html.haml within layouts/application (27.2ms)
+Completed 200 OK in 1022ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:48:27 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.0ms)
+Rendered pages/index.html.haml within layouts/application (34.1ms)
+Completed 200 OK in 1919ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:52:35 -0800
+  Processing by PagesController#index as HTML
+Completed   in 39ms
+
+NameError (undefined local variable or method `verify_credentials' for #<PagesController:0x9df24fc>):
+  
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.6ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:52:59 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:52:59 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:52:59 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:52:59 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:52:59 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:00 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:00 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:00 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:00 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:00 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:00 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:00 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:00 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:00 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:01 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:01 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:01 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:01 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:01 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:01 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:53:01 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:33 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:34 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:34 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:34 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:34 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:35 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:35 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:35 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:35 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:35 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:35 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:35 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:35 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:35 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:35 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:36 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:36 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:36 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:36 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:36 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:36 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:53 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:54 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:54 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:54 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:54 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:54 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:54 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:54 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:54 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:55 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:55 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:55 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:55 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:55 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:55 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 38ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:55 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:55 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:55 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:55 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:56 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 09:55:56 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:00:34 -0800
+
+ActionController::RoutingError (undefined local variable or method `pages_path' for ApplicationController:Class):
+  app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:3:in `<top (required)>'
+  app/controllers/pages_controller.rb:3:in `<top (required)>'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:08:53 -0800
+  Processing by PagesController#index as HTML
+Completed   in 1ms
+
+NoMethodError (undefined method `get' for nil:NilClass):
+  lib/sfrequest.rb:18:in `get_news_feed'
+  app/controllers/pages_controller.rb:6:in `index'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:09:31 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/index.html.haml within layouts/application (30.8ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:09:37 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Completed   in 1ms
+
+NoMethodError (undefined method `get' for nil:NilClass):
+  lib/sfrequest.rb:45:in `search'
+  app/controllers/pages_controller.rb:24:in `search'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
+
+
+Started GET "/pages/search" for 127.0.0.1 at 2011-02-16 10:11:23 -0800
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PagesController):
+  
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:11:33 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.4ms)
+Rendered pages/index.html.haml within layouts/application (30.9ms)
+Completed 200 OK in 37ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 10:11:35 -0800
+  Processing by LeadsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:11:35 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.1ms)
+Rendered pages/index.html.haml within layouts/application (31.7ms)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 10:11:39 -0800
+  Processing by ContactsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:11:39 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.0ms)
+Rendered pages/index.html.haml within layouts/application (30.3ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 10:11:42 -0800
+  Processing by AccountsController#index as HTML
+Completed   in 1ms
+
+NoMethodError (undefined method `get' for nil:NilClass):
+  lib/sfrequest.rb:71:in `get_sobjects'
+  app/controllers/accounts_controller.rb:6:in `index'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.8ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:11:53 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Completed   in 1ms
+
+NoMethodError (undefined method `get' for nil:NilClass):
+  lib/sfrequest.rb:45:in `search'
+  app/controllers/pages_controller.rb:24:in `search'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:20 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:20 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:21 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:21 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:21 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:21 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:21 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:21 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:21 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:21 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:21 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:22 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:22 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:22 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:22 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:22 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:22 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:22 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:22 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:22 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:16:22 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:18:02 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/index" for 127.0.0.1 at 2011-02-16 10:23:59 -0800
+
+ActionController::RoutingError (No route matches "/search/index"):
+  
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:24:15 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Completed   in 1ms
+
+NoMethodError (undefined method `get' for nil:NilClass):
+  lib/sfrequest.rb:45:in `search'
+  app/controllers/pages_controller.rb:24:in `search'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:26:02 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"pa", "x"=>"13", "y"=>"16"}
+Completed   in 1ms
+
+NoMethodError (undefined method `get' for nil:NilClass):
+  lib/sfrequest.rb:45:in `search'
+  app/controllers/pages_controller.rb:24:in `search'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:26:22 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"pa", "x"=>"13", "y"=>"16"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:23 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:23 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:23 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:23 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:23 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:23 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:23 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:23 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:23 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:24 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:24 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:24 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:24 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:24 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:24 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:24 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:24 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:24 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:24 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:26:25 -0800
+  Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:27:11 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.6ms)
+Rendered pages/index.html.haml within layouts/application (79.9ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:27:13 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"12", "y"=>"14"}
+Completed   in 1ms
+
+NoMethodError (undefined method `get' for nil:NilClass):
+  lib/sfrequest.rb:45:in `search'
+  app/controllers/pages_controller.rb:24:in `search'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:28:34 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"12", "y"=>"14"}
+Completed   in 1ms
+
+NoMethodError (undefined method `get' for nil:NilClass):
+  lib/sfrequest.rb:45:in `search'
+  app/controllers/pages_controller.rb:24:in `search'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.2ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:28:39 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"17", "y"=>"10"}
+Completed   in 1ms
+
+NoMethodError (undefined method `get' for nil:NilClass):
+  lib/sfrequest.rb:45:in `search'
+  app/controllers/pages_controller.rb:24:in `search'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:31:41 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"17", "y"=>"10"}
+Completed   in 1ms
+
+NoMethodError (undefined method `get' for nil:NilClass):
+  lib/sfrequest.rb:45:in `search'
+  app/controllers/pages_controller.rb:24:in `search'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.6ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:31:47 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"17", "y"=>"10"}
+Completed   in 1ms
+
+NoMethodError (undefined method `get' for nil:NilClass):
+  lib/sfrequest.rb:45:in `search'
+  app/controllers/pages_controller.rb:24:in `search'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.3ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:33:02 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"17", "y"=>"10"}
+Completed   in 1ms
+
+NoMethodError (undefined method `get' for nil:NilClass):
+  lib/sfrequest.rb:45:in `search'
+  app/controllers/pages_controller.rb:24:in `search'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:41:16 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"17", "y"=>"10"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:41:16 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered pages/index.html.haml within layouts/application (30.7ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:41:19 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"18", "y"=>"6"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:41:19 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (30.6ms)
+Completed 200 OK in 37ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 10:41:22 -0800
+  Processing by AccountsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:41:22 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.1ms)
+Rendered pages/index.html.haml within layouts/application (31.2ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 10:41:23 -0800
+  Processing by ContactsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:41:23 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered pages/index.html.haml within layouts/application (30.9ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 10:41:25 -0800
+  Processing by LeadsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:41:25 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.0ms)
+Rendered pages/index.html.haml within layouts/application (31.1ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:45:47 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"11", "y"=>"10"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:45:47 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.1ms)
+Rendered pages/index.html.haml within layouts/application (71.5ms)
+Completed 200 OK in 78ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:45:55 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:45:55 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (29.2ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 10:45:57 -0800
+  Processing by LeadsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:45:57 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.1ms)
+Rendered pages/index.html.haml within layouts/application (32.0ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 10:45:58 -0800
+  Processing by ContactsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:45:59 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 10:46:00 -0800
+  Processing by AccountsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:46:00 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.2ms)
+Rendered pages/index.html.haml within layouts/application (31.6ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/dsadsa" for 127.0.0.1 at 2011-02-16 10:46:07 -0800
+  Processing by AccountsController#show as HTML
+  Parameters: {"id"=>"dsadsa"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:46:07 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered pages/index.html.haml within layouts/application (29.4ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 10:46:10 -0800
+  Processing by AccountsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:46:10 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/index.html.haml within layouts/application (30.7ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 10:46:12 -0800
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:46:12 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 10:46:21 -0800
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:46:21 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/index.html.haml within layouts/application (31.3ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:54:10 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (29.8ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 10:54:13 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"16", "y"=>"11"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:54:13 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/index.html.haml within layouts/application (31.4ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:54:39 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/index.html.haml within layouts/application (30.2ms)
+Completed 200 OK in 36ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 10:54:40 -0800
+  Processing by AccountsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:54:40 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (30.4ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 10:54:42 -0800
+  Processing by ContactsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:54:42 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.1ms)
+Rendered pages/index.html.haml within layouts/application (30.9ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authorizations/oauth" for 127.0.0.1 at 2011-02-16 10:54:44 -0800
+  Processing by AuthorizationsController#oauth as HTML
+Redirected to https://login.salesforce.com/services/oauth2/authorize?client_id=3MVG9zeKbAVObYjPWX7.1fNTRQweoQ2LPrwV7Xiqc5kwFLkkPbuyo9lI9fR7bCbB61nOZ5RTbG1m448xxJ65i&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorizations%2Fcallback&type=web_server
+Completed 302 Found in 23ms
+
+
+Started GET "/authorizations/callback?code=aPrxrw6IzDI.fzsoUOYshIOjwHPZF4LDJ0tSZUPvv4Hy966NQylS7PF3zgXfxNn1JT9LWam0BA%3D%3D" for 127.0.0.1 at 2011-02-16 10:54:49 -0800
+  Processing by AuthorizationsController#callback as HTML
+  Parameters: {"code"=>"aPrxrw6IzDI.fzsoUOYshIOjwHPZF4LDJ0tSZUPvv4Hy966NQylS7PF3zgXfxNn1JT9LWam0BA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1539ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:54:51 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.0ms)
+Rendered pages/index.html.haml within layouts/application (70.6ms)
+Completed 200 OK in 2354ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 10:54:56 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered accounts/index.html.haml within layouts/application (28.2ms)
+Completed 200 OK in 1195ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72l9IAA/edit" for 127.0.0.1 at 2011-02-16 10:55:06 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l9IAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___710619409_78773100_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (7.3ms)
+Rendered accounts/edit.html.haml within layouts/application (36.5ms)
+Completed 200 OK in 1062ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 10:55:10 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered accounts/index.html.haml within layouts/application (26.5ms)
+Completed 200 OK in 952ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 10:55:12 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (7.6ms)
+Rendered contacts/index.html.haml within layouts/application (31.3ms)
+Completed 200 OK in 964ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 10:55:15 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (7.4ms)
+Rendered leads/index.html.haml within layouts/application (29.9ms)
+Completed 200 OK in 966ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 10:55:16 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.3ms)
+Rendered pages/index.html.haml within layouts/application (36.2ms)
+Completed 200 OK in 2444ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 11:01:30 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/index.html.haml within layouts/application (29.7ms)
+Completed 200 OK in 2409ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 11:01:42 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"17", "y"=>"15"}
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/search.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 1227ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 11:01:46 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/search.html.haml within layouts/application (34.0ms)
+Completed 200 OK in 1058ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 11:02:21 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (31.2ms)
+Completed 200 OK in 2319ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 11:02:54 -0800
+  Processing by PagesController#index as HTML
+Rendered pages/index.html.haml within layouts/application (15.1ms)
+Completed   in 4739ms
+
+ActionView::Template::Error (can't convert String into Integer):
+    5:   #left_column
+    6:     .status_notes 
+    7:       %h3 Open
+    8:     = @sticky_notes["Status__c"]
+    9:     .status_notes
+    10:       %h3 In Progress
+    11:     .status_notes
+  app/views/pages/index.html.haml:8:in `[]'
+  app/views/pages/index.html.haml:8:in `_app_views_pages_index_html_haml__939381118_86260280_1008611653'
+
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+Rendered /home/sandant/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 11:03:54 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (32.3ms)
+Completed 200 OK in 1918ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 12:07:43 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered leads/index.html.haml within layouts/application (30.8ms)
+Completed 200 OK in 1082ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 12:07:46 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (7.0ms)
+Rendered contacts/index.html.haml within layouts/application (33.1ms)
+Completed 200 OK in 1668ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:07:48 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered accounts/index.html.haml within layouts/application (28.1ms)
+Completed 200 OK in 891ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72l0IAA/edit" for 127.0.0.1 at 2011-02-16 12:07:51 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l0IAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___710619409_88358310_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered accounts/edit.html.haml within layouts/application (34.6ms)
+Completed 200 OK in 1088ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/accounts/001C000000o72l0IAA" for 127.0.0.1 at 2011-02-16 12:07:55 -0800
+  Processing by AccountsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "Id"=>"001C000000o72l0IAA", "Name"=>"United Oil & Gas, Singapore", "Phone"=>"(650) 450-8810", "Website"=>"http://www.uos.com", "BillingStreet"=>"9 Tagore Lane           Singapore, Singapore 787472           Singapore", "BillingState"=>"Singapore", "BillingCountry"=>"", "BillingCity"=>"Singapore", "Description"=>"", "commit"=>"Edit", "id"=>"001C000000o72l0IAA"}
+Redirected to http://localhost:3000/accounts/001C000000o72l0IAA/edit
+Completed 302 Found in 1197ms
+
+
+Started GET "/accounts/001C000000o72l0IAA/edit" for 127.0.0.1 at 2011-02-16 12:07:56 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l0IAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___710619409_84552840_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (7.0ms)
+Rendered accounts/edit.html.haml within layouts/application (31.6ms)
+Completed 200 OK in 1037ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 12:07:59 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.9ms)
+Rendered contacts/index.html.haml within layouts/application (33.1ms)
+Completed 200 OK in 899ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/003C0000015JCKyIAO/edit" for 127.0.0.1 at 2011-02-16 12:08:01 -0800
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCKyIAO"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml__745843939_85266430_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/contacts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered contacts/edit.html.haml within layouts/application (32.7ms)
+Completed 200 OK in 1002ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts/003C0000015JCKyIAO" for 127.0.0.1 at 2011-02-16 12:08:04 -0800
+  Processing by ContactsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "Id"=>"003C0000015JCKyIAO", "FirstName"=>"Pat", "LastName"=>"Stumuller", "Phone"=>"(014) 427-4427", "Email"=>"pat@pyramid.net", "MailingStreet"=>"2 Place Jussieu", "MailingCity"=>"Paris", "MailingState"=>"", "MailingCountry"=>"France", "Description"=>"", "commit"=>"Edit", "id"=>"003C0000015JCKyIAO"}
+Redirected to http://localhost:3000/contacts/003C0000015JCKyIAO/edit
+Completed 302 Found in 1201ms
+
+
+Started GET "/contacts/003C0000015JCKyIAO/edit" for 127.0.0.1 at 2011-02-16 12:08:05 -0800
+  Processing by ContactsController#edit as HTML
+  Parameters: {"id"=>"003C0000015JCKyIAO"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_contacts_edit_html_haml__745843939_86421370_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/contacts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered contacts/edit.html.haml within layouts/application (35.9ms)
+Completed 200 OK in 976ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 12:08:08 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (7.5ms)
+Rendered leads/index.html.haml within layouts/application (31.4ms)
+Completed 200 OK in 921ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyY7MAI/edit" for 127.0.0.1 at 2011-02-16 12:08:10 -0800
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyY7MAI"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml__43908048_86497990_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/leads/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered leads/edit.html.haml within layouts/application (31.4ms)
+Completed 200 OK in 977ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads/00QC000000lzyY7MAI" for 127.0.0.1 at 2011-02-16 12:08:13 -0800
+  Processing by LeadsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "Id"=>"00QC000000lzyY7MAI", "FirstName"=>"Mathias", "LastName"=>"Perez", "Email"=>"bertha@fcof.net", "Company"=>"Farmers Coop. of Florida", "Street"=>"321 Westcott Building", "State"=>"FL", "Country"=>"USA", "City"=>"Tallahassee", "Description"=>"Description", "commit"=>"Edit", "id"=>"00QC000000lzyY7MAI"}
+Redirected to http://localhost:3000/leads/00QC000000lzyY7MAI/edit
+Completed 302 Found in 1190ms
+
+
+Started GET "/leads/00QC000000lzyY7MAI/edit" for 127.0.0.1 at 2011-02-16 12:08:14 -0800
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyY7MAI"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml__43908048_78764170_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/leads/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (7.5ms)
+Rendered leads/edit.html.haml within layouts/application (36.5ms)
+Completed 200 OK in 982ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 12:08:23 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"14", "y"=>"12"}
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/search.html.haml within layouts/application (29.4ms)
+Completed 200 OK in 1035ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:08:26 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/index.html.haml within layouts/application (31.7ms)
+Completed 200 OK in 1869ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:12:14 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered accounts/index.html.haml within layouts/application (26.1ms)
+Completed 200 OK in 2322ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72l9IAA/edit" for 127.0.0.1 at 2011-02-16 12:12:53 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l9IAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___710619409_85096870_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered accounts/edit.html.haml within layouts/application (32.8ms)
+Completed 200 OK in 1141ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 12:12:57 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered contacts/index.html.haml within layouts/application (32.9ms)
+Completed 200 OK in 1000ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 12:13:12 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"13", "y"=>"17"}
+Rendered layouts/_menu.html.haml (7.2ms)
+Rendered pages/search.html.haml within layouts/application (26.6ms)
+Completed 200 OK in 1981ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:13:17 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (30.9ms)
+Completed 200 OK in 2221ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:16:05 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered accounts/index.html.haml within layouts/application (26.4ms)
+Completed 200 OK in 1067ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 12:16:08 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered contacts/index.html.haml within layouts/application (69.8ms)
+Completed 200 OK in 2475ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 12:16:12 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (7.2ms)
+Rendered leads/index.html.haml within layouts/application (30.7ms)
+Completed 200 OK in 899ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 12:16:14 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"search...", "x"=>"23", "y"=>"11"}
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/search.html.haml within layouts/application (24.1ms)
+Completed 200 OK in 1134ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 12:16:17 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered leads/index.html.haml within layouts/application (29.6ms)
+Completed 200 OK in 917ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 12:16:20 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered pages/search.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 991ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72kyIAA/edit" for 127.0.0.1 at 2011-02-16 12:16:24 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72kyIAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___710619409_86341090_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered accounts/edit.html.haml within layouts/application (32.2ms)
+Completed 200 OK in 938ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 12:16:30 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered leads/index.html.haml within layouts/application (27.8ms)
+Completed 200 OK in 1035ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyYGMAY/edit" for 127.0.0.1 at 2011-02-16 12:16:33 -0800
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyYGMAY"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml__43908048_86343320_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/leads/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (7.0ms)
+Rendered leads/edit.html.haml within layouts/application (32.5ms)
+Completed 200 OK in 1031ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:16:37 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered accounts/index.html.haml within layouts/application (29.2ms)
+Completed 200 OK in 997ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts/001C000000o72l8IAA/edit" for 127.0.0.1 at 2011-02-16 12:16:40 -0800
+  Processing by AccountsController#edit as HTML
+  Parameters: {"id"=>"001C000000o72l8IAA"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_accounts_edit_html_haml___710619409_86849500_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/accounts/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered accounts/edit.html.haml within layouts/application (35.0ms)
+Completed 200 OK in 1341ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:16:44 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered pages/index.html.haml within layouts/application (34.2ms)
+Completed 200 OK in 5038ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pages/search" for 127.0.0.1 at 2011-02-16 12:19:27 -0800
+  Processing by PagesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "s"=>"pa", "x"=>"0", "y"=>"0"}
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered pages/search.html.haml within layouts/application (33.4ms)
+Completed 200 OK in 2988ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads/00QC000000lzyYBMAY/edit" for 127.0.0.1 at 2011-02-16 12:19:34 -0800
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyYBMAY"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml__43908048_85096240_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/leads/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered leads/edit.html.haml within layouts/application (31.8ms)
+Completed 200 OK in 930ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads/00QC000000lzyYBMAY" for 127.0.0.1 at 2011-02-16 12:19:51 -0800
+  Processing by LeadsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "Id"=>"00QC000000lzyYBMAY", "FirstName"=>"Patricia", "LastName"=>"Feager", "Email"=>"patricia_feager@is.com", "Company"=>"International Shipping Co.", "Street"=>"", "State"=>"NC", "Country"=>"USA", "City"=>"", "Description"=>"=kjdsak", "commit"=>"Edit", "id"=>"00QC000000lzyYBMAY"}
+Redirected to http://localhost:3000/leads/00QC000000lzyYBMAY/edit
+Completed 302 Found in 1277ms
+
+
+Started GET "/leads/00QC000000lzyYBMAY/edit" for 127.0.0.1 at 2011-02-16 12:19:53 -0800
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyYBMAY"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml__43908048_86324450_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/leads/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered leads/edit.html.haml within layouts/application (37.0ms)
+Completed 200 OK in 913ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads/00QC000000lzyYBMAY" for 127.0.0.1 at 2011-02-16 12:19:57 -0800
+  Processing by LeadsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3crMBeEbhBNN30cZx7YAZiogreQqAKMY2y4oJJktijM=", "Id"=>"00QC000000lzyYBMAY", "FirstName"=>"Patricia", "LastName"=>"Feager", "Email"=>"patricia_feager@is.com", "Company"=>"International Shipping Co.", "Street"=>"", "State"=>"NC", "Country"=>"USA", "City"=>"", "Description"=>"", "commit"=>"Edit", "id"=>"00QC000000lzyYBMAY"}
+Redirected to http://localhost:3000/leads/00QC000000lzyYBMAY/edit
+Completed 302 Found in 1253ms
+
+
+Started GET "/leads/00QC000000lzyYBMAY/edit" for 127.0.0.1 at 2011-02-16 12:19:59 -0800
+  Processing by LeadsController#edit as HTML
+  Parameters: {"id"=>"00QC000000lzyYBMAY"}
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from block in _app_views_leads_edit_html_haml__43908048_78583550_1008611653 at /home/sandant/Desktop/SalesForceRails/app/views/leads/edit.html.haml:2)
+Rendered layouts/_menu.html.haml (6.5ms)
+Rendered leads/edit.html.haml within layouts/application (32.5ms)
+Completed 200 OK in 925ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:20:18 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (7.1ms)
+Rendered pages/index.html.haml within layouts/application (56.6ms)
+Completed 200 OK in 1888ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:21:10 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.4ms)
+Rendered accounts/index.html.haml within layouts/application (26.3ms)
+Completed 200 OK in 989ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2011-02-16 12:21:13 -0800
+  Processing by ContactsController#index as HTML
+Rendered layouts/_menu.html.haml (6.6ms)
+Rendered contacts/index.html.haml within layouts/application (32.1ms)
+Completed 200 OK in 914ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/leads" for 127.0.0.1 at 2011-02-16 12:21:15 -0800
+  Processing by LeadsController#index as HTML
+Rendered layouts/_menu.html.haml (6.7ms)
+Rendered leads/index.html.haml within layouts/application (29.7ms)
+Completed 200 OK in 966ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/accounts" for 127.0.0.1 at 2011-02-16 12:21:18 -0800
+  Processing by AccountsController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered accounts/index.html.haml within layouts/application (27.3ms)
+Completed 200 OK in 912ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-02-16 12:21:20 -0800
+  Processing by PagesController#index as HTML
+Rendered layouts/_menu.html.haml (6.8ms)
+Rendered pages/index.html.haml within layouts/application (31.3ms)
+Completed 200 OK in 2032ms (Views: 41.8ms | ActiveRecord: 0.0ms)

@@ -1,0 +1,17 @@
+%ul
+  - if request.params["controller"] == 'pages' && request.params["action"] == 'index'
+    %li.active= link_to 'Home', :controller => 'pages', :action => 'index'
+  - else
+    %li= link_to 'Home', :controller => 'pages', :action => 'index'
+  - if request.params["controller"] == 'accounts' && request.params["action"] == 'index'
+    %li.active= link_to 'Accounts', accounts_url
+  - else
+    %li= link_to 'Accounts', accounts_url
+  - if request.params["controller"] == 'contacts' && request.params["action"] == 'index'
+    %li.active= link_to 'Contacts', contacts_url
+  - else
+    %li= link_to 'Contacts', contacts_url
+  - if request.params["controller"] == 'leads' && request.params["action"] == 'index'
+    %li.active= link_to 'Leads', leads_url
+  - else
+    %li= link_to 'Leads', leads_url

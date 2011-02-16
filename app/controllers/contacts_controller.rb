@@ -4,23 +4,15 @@ require 'sfrequest'
 class ContactsController < ApplicationController
 
   def index
-    if Token::get_token.nil?
-      redirect_to :controller => 'pages', :action => 'index'      
-    else
-      @sobjects = SFRequest::get_sobjects 'Contact'
-    end
+    @sobjects = SFRequest::get_sobjects 'Contact'
   end
 
   def edit
-    if Token::get_token.nil?
-      redirect_to :controller => 'pages', :action => 'index'      
+    unless params['id'].nil?
+      @sobject = SFRequest::get_sobject params['id'], 'Contact'
     else
-      unless params['id'].nil?
-        @sobject = SFRequest::get_sobject params['id'], 'Contact'
-      else
-        redirect_to :controller => 'pages', :action => 'index'
-      end
-    end  
+      redirect_to :controller => 'pages', :action => 'index'
+    end
   end
 
   def update

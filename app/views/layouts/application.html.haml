@@ -3,25 +3,18 @@
   %head
     %title Sticky Note
     = stylesheet_link_tag :all
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?=Ubuntu'
     = javascript_include_tag :defaults
+    = javascript_include_tag 'main.js'
     = csrf_meta_tag
   %body
-    = request
     #wrapper
       #header
       #menu.dark_stripe
-        %ul
-          %li.active= link_to 'Home', :controller => 'pages', :action => 'index'
-          %li= link_to 'Accounts', accounts_url
-          %li= link_to 'Contacts', contacts_url
-          %li= link_to 'Leads', leads_url
+        = render :partial => 'layouts/menu', :locals => {:request => request}
         = form_tag search_pages_path do
-          - if params["s"].nil?
-            - search = 'search...'
-          - else
-            - search = params["s"]
           #search
-            = text_field_tag 's', search, :class => 'sbox', :tabindex => '1'
+            = text_field_tag 's', 'search...', :class => 'sbox', :tabindex => '1'
             = image_submit_tag '/images/search-icon-small-white.png', :tabindex => '2', :id => 'sbutton', :alt => 'Search'
       #section_info
         #info_text

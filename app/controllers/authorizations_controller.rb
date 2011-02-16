@@ -2,6 +2,7 @@ require 'authorization'
 require 'token'
 
 class AuthorizationsController < ApplicationController
+  before_filter :check_token, :except => [:oauth, :callback]
 
   def oauth
     redirect_to Authorization::oauth request

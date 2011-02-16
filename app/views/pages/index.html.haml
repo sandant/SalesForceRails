@@ -3,7 +3,15 @@
   = link_to 'Connect here right now', :controller => 'authorizations', :action => 'oauth'
 - else
   #left_column
-    left
+    .status_notes 
+      %h3 Open
+    = @sticky_notes["records"]
+    .status_notes
+      %h3 In Progress
+    .status_notes
+      %h3 Resolved
+    .status_notes
+      %h3 Closed
   #right_column
     .title_nf.dark_stripe
       %h4.arrow-down.header-content Chatter News

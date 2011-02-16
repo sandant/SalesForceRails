@@ -11,6 +11,7 @@ gem 'json'
 # gem 'cgi'
 gem 'haml'
 gem 'sass'
+gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
