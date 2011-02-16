@@ -10,18 +10,25 @@
       #header
       #menu.dark_stripe
         %ul
-          %li.active= link_to 'Sticky Note', :controller => 'pages', :action => 'index'
-          %li= link_to 'Accounts', :controller => 'pages', :action => 'error'
+          %li.active= link_to 'Home', :controller => 'pages', :action => 'index'
+          %li= link_to 'Accounts', accounts_url
           %li= link_to 'Contacts', :controller => 'pages', :action => 'error'
-        = form_tag :controller => 'pages', :action => 'search' do
+          %li= link_to 'Leads', :controller => 'pages', :action => 'error'
+        = form_tag search_pages_path do
+          - if params["s"].nil?
+            - search = 'search...'
+          - else
+            - search = params["s"]
           #search
-            = text_field_tag 's', 'search...', :class => 'sbox', :tabindex => '1'
+            = text_field_tag 's', search, :class => 'sbox', :tabindex => '1'
             = image_submit_tag '/images/search-icon-small-white.png', :tabindex => '2', :id => 'sbutton', :alt => 'Search'
       #section_info
         #info_text
           %h1 Connecting with SalesForce using Ruby on Rails
           .blurb lalalala H skjdsdskj
       #body
+        - unless flash[:message].blank?
+          .alert= flash[:message]
         = yield
       #footer.dark_stripe
         Derechos Reservados - Demos 2011

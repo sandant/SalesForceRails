@@ -1,6 +1,7 @@
+require 'authorization'
+require 'token'
+
 class AuthorizationsController < ApplicationController
-  require 'Authorization'
-  require 'Token'
 
   def oauth
     redirect_to Authorization::oauth request

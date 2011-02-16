@@ -8,7 +8,11 @@ h1 {
   padding: 0; }
 
 a {
-  outline: none; }
+  outline: none;
+  color: #333333;
+  font-weight: lighter;
+  outline: medium none;
+  text-decoration: none; }
 
 #wrapper {
   width: 948px;
@@ -33,7 +37,8 @@ a {
       width: 120px;
       position: absolute;
       left: 10px;
-      top: 4px; }
+      top: 4px;
+      color: #cccccc; }
     #wrapper #menu #sbutton {
       position: absolute;
       right: 35px;
@@ -134,10 +139,23 @@ ul {
 .arrow-down {
   background: url("/images/arrow-light-down.png") no-repeat scroll 11px 18px transparent; }
 
+.alert {
+  color: #cc0000;
+  font-weight: bolder;
+  padding-bottom: 10px; }
+
 h4.header-content {
   font-size: 18px;
   padding: 13px 0 0 31px;
   margin: 0; }
 
-input:focus {
+input.last, textarea.last {
+  margin-bottom: 10px; }
+input:focus, textarea:focus {
   outline: none; }
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bolder;
+  color: #666666; }

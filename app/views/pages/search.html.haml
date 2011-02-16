@@ -1,21 +1,24 @@
-#search_values
-  - last_obj = ''
-  - if @found_values.length < 1
-    %h4 There is no results
-  - else
-    - @found_values.each do |e|
-      - if last_obj != e["attributes"]["type"] || last_obj == ''
-        .title_nf.dark_stripe
-          %h4.arrow-down.header-content= e["attributes"]["type"]
-
-      - case e["attributes"]["type"]
-        - when 'FeedPost'
-          = e["Body"]
-        - when 'Account'
-          = link_to e["Name"], :controller => 'sobjects', :action => 'edit', :id => e["Id"], :type => 'Account'
-        - when 'Contact'
-          = link_to e["Name"], :controller => 'sobjects', :action => 'edit', :id => e["Id"], :type => 'Contact'
-        - when 'Lead'
-          = link_to e["Name"], :controller => 'sobjects', :action => 'edit', :id => e["Id"], :type => 'Lead'
-      - last_obj = e["attributes"]["type"]
-      %br
+- last_obj = ''
+- if @found_values.length < 1
+  %h4 There is no results
+- else
+  - first = nil
+  - @found_values.each do |e|
+    - if last_obj != e["attributes"]["type"] || last_obj == ''
+      - unless first.nil?
+        %br
+      .title_nf.dark_stripe
+        %h4.arrow-down.header-content= e["attributes"]["type"]
+      - first = false
+    
+    - case e["attributes"]["type"]
+      - when 'FeedPost'
+        = e["Body"]
+      - when 'Account'
+        = link_to e["Name"], edit_account_url(:id => e["Id"])
+      - when 'Contact'
+        = link_to e["Name"], edit_account_url(:id => e["Id"])
+      - when 'Lead'
+        = link_to e["Name"], edit_account_url(:id => e["Id"])
+    - last_obj = e["attributes"]["type"]
+    %br

@@ -1,0 +1,37 @@
+- @sobject["records"].each do |s|
+  - form_tag({:action => 'update'}, {:method => 'put'}) do
+    = hidden_field_tag 'Id', s["Id"]
+
+    .title_nf.dark_stripe
+      %h4.arrow-down.header-content= 'Account Information'
+    = label_tag 'Name'
+    = text_field_tag 'Name', s["Name"]
+    %br
+    = label_tag 'Phone'
+    = text_field_tag 'Phone', s["Phone"]
+    %br
+    = label_tag 'Website'
+    = text_field_tag 'Website', s["Website"], :class => 'last'
+    %br
+
+    .title_nf.dark_stripe
+      %h4.arrow-down.header-content= 'Address Information'
+    = label_tag 'Billing Street'
+    = text_field_tag 'BillingStreet', s["BillingStreet"]
+    %br
+    = label_tag 'Billing State'
+    = text_field_tag 'BillingState', s["BillingState"]
+    %br
+    = label_tag 'Billing Country'
+    = text_field_tag 'BillingCountry', s["BillingCountry"]
+    %br
+    = label_tag 'Billing City'
+    = text_field_tag 'BillingCity', s["BillingCity"], :class => 'last'
+    %br
+
+    .title_nf.dark_stripe
+      %h4.arrow-down.header-content= 'Description Information'
+    = label_tag 'Description'
+    = text_area_tag 'Description', s["Description"], :rows => 10, :cols => 75, :class => 'last'
+    %br
+    = submit_tag 'Edit'

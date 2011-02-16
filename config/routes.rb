@@ -1,19 +1,22 @@
 TestApp::Application.routes.draw do
 
-  get "sobjects/index"
-  get "sobjects/edit"
-  get "sobjects/delete"
-  get "sobjects/show"
-  match "sobjects/update" => "sobjects#update"
+  root :to => "pages#index"
 
   get "authorizations/oauth"
   get "authorizations/callback"
-  get "authorizations/show_accounts"
 
-  get "pages/index"
-  get "pages/error"
-  match "pages/search" => 'pages#search'
-  get 'pages/edit_account'
+  resources :accounts do
+    collection do
+      get :index, :as => 'index'
+    end
+  end
+
+  get 'pages/error'
+  resources :pages do
+    collection do
+      post :search, :as => 'search'
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -67,7 +70,6 @@ TestApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => "pages#index"
 
   # See how all your routes lay out with "rake routes"
 

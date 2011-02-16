@@ -1,0 +1,5 @@
+.title_nf.dark_stripe
+  %h4.arrow-down.header-content Accounts
+- @sobjects["records"].each do |s|
+  = link_to s["Name"], edit_account_url(s["Id"])
+  %br
