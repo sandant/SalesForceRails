@@ -109,7 +109,7 @@ module SFRequest
   end
 
   def SFRequest.update_sobject sobject, type
-    params_json = ''
+    params_json = ""
 
     case type
       when 'Account'
@@ -127,7 +127,6 @@ module SFRequest
         params_json = "{
                         \"FirstName\":\"#{sobject["FirstName"]}\",
                         \"LastName\":\"#{sobject["LastName"]}\",
-                        \"Website\":\"#{sobject["Website"]}\",
                         \"Phone\":\"#{sobject["Phone"]}\",
                         \"Description\":\"#{sobject["Description"]}\",
                         \"MailingStreet\":\"#{sobject["MailingStreet"]}\",
@@ -145,8 +144,8 @@ module SFRequest
                         \"Email\":\"#{sobject["Email"]}\",
                         \"Description\":\"#{sobject["Description"]}\",
                         \"Country\":\"#{sobject["Country"]}\",
-                        \"Company\":\"#{sobject["Company"]}\"
-                        \"City\":\"#{sobject["City"]}\",
+                        \"Company\":\"#{sobject["Company"]}\",
+                        \"City\":\"#{sobject["City"]}\"
                       }"
     end
 
