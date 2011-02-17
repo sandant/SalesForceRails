@@ -32,16 +32,6 @@ module SFRequest
              LIMIT 100'
     
     response = JSON.parse(Token::get_token.get("#{INSTANCE_URL}query/?q=#{CGI::escape(query)}"))
-
-    =begin
-    json["records"].each do |r|
-      case r["Status__c"]
-        when "Open"
-          
-      end
-    end
-    =end
-
   end
 
   def SFRequest.search keyword
