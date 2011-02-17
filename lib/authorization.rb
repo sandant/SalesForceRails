@@ -15,13 +15,13 @@ module Authorization
   def Authorization.oauth request
     client.web_server.authorize_url(
       :response_type => 'code',
-      :redirect_uri => "https://stickynotes2.heroku.com/authorizations/callback"
+      :redirect_uri => "https://stickyforce.heroku.com/authorizations/callback"
     )
   end
 
   def Authorization.callback request, params
     client.web_server.get_access_token(params, :redirect_uri => 
-                     "https://stickynotes2.heroku.com/authorizations/callback", 
+                     "https://stickyforce.heroku.com/authorizations/callback", 
                      :grant_type => 'authorization_code')
   end
 end
